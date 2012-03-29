@@ -1,16 +1,15 @@
-# Branch
+# 1961
 
 Sculpture conceptualized using a revision control system and physically represented.
 
 ## What
 
-In one or many physical place(s), an interpretation of the source code hosted on this GitHub repository will be named "Branch" + [branch ID].
+In one or many physical place(s), an interpretation of the source code hosted on this GitHub repository or one of its version will be named "1961" + [branch ID].
 
 This project contains:
 
 * The source code of an artistic physical assemblage of objects, materials, life, sounds, performances…
 * A documentation for the source code
-* A website introducing the project
 * Images of the current state of the piece and archives of past versions
 * List of contributors
 
@@ -35,7 +34,7 @@ The documentation of a representation can be modified.
 
 ### Issues
 
-Suggestions, bug reports, issues, pull requests, are discussed on the GitHub issue page.
+Suggestions, bug reports, issues, pull requests, are discussed on the <a href="https://github.com/raphaelbastide/1961/issues">GitHub issue page</a>.
 
 ## About
 

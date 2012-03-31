@@ -1,10 +1,10 @@
-# 1961
+# 1962
 
 Sculpture conceptualized using a revision control system and physically represented.
 
 ## What
 
-In one or many physical place(s), an interpretation of the source code hosted on this GitHub repository or one of its version will be named "1961" + [branch ID].
+In one or many physical place(s), an interpretation of the source code hosted on this GitHub repository or one of its version will be named "1962" + [branch ID].
 
 This project contains:
 
@@ -40,4 +40,5 @@ Suggestions, bug reports, issues, pull requests, are discussed on the <a href="h
 
 This project is under <a href="http://raphael.mit-license.org/">MIT LICENSE</a>.
 
-Initiated by Raphaël Bastide in february 2012
+Initiated by Raphaël Bastide in february 2012 
+Inspired by Robert Morris _Card File_, 1962

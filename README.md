@@ -8,8 +8,8 @@ In one or many physical place(s), an interpretation of the source code hosted on
 
 This project contains:
 
-* The source code of an artistic physical assemblage of objects, materials, life, sounds, performances…
-* A documentation for the source code
+* installation.md: The source code of an artistic physical assemblage of objects, materials, life, sounds, performances…
+* doc.md: the documentation for the source code
 * Images of the current state of the piece and archives of past versions
 * List of contributors
 
@@ -34,7 +34,7 @@ The documentation of a representation can be modified.
 
 ### Issues
 
-Suggestions, bug reports, issues, pull requests, are discussed on the <a href="https://github.com/raphaelbastide/1961/issues">GitHub issue page</a>.
+Suggestions, bug reports, issues, pull requests, are discussed on the <a href="https://github.com/raphaelbastide/1962/issues">GitHub issue page</a>.
 
 ## About
 

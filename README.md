@@ -8,10 +8,10 @@ In one or many physical place(s), an interpretation of the source code hosted on
 
 This project contains:
 
-* installation.md: The source code of an artistic physical assemblage of objects, materials, life, sounds, performances…
+* INSTALLATION: The source code of an artistic physical assemblage of objects, materials, life, sounds, performances…
+* CONTRIBUTORS: List of the contributors
 * doc.md: the documentation for the source code
 * Images of the current state of the piece and archives of past versions
-* List of contributors
 
 ## How
 
@@ -27,10 +27,18 @@ As code sources must be as precise as possible, the interpretations of each piec
 A contribution can be discussed only if it follows the documentation.
 Duplications must accept to be shown in a form.
 
+You can also open an issue on the <a href="https://github.com/raphaelbastide/1962/issues">GitHub issue page</a> for minor changes.
+
 ### Representation
 
 A representation must have its own public branch and archive. It must be documented with photographs or streamed video and must accept modifications.
 The documentation of a representation can be modified.
+
+To make your own installation:
+
+1. Read the content of the file doc.md
+2. Fork the project in your own repository
+2. Modify the file INSTALLATION
 
 ### Issues
 

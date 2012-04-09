@@ -32,13 +32,13 @@ Source code of the physical sculpture 1962. In this file are depicted and docume
 ### Basics
 
 - Use the format "Key: value"
-- Parentchip relationship are symbolised using indentation (hit [tab](en.wikipedia.org/wiki/Tab_character) key at the begining of a line) Demo:
+- Parentchip relationship are symbolised using indentation (hit [tab](http://en.wikipedia.org/wiki/Tab_character) key at the begining of a line) Demo:
 
-    Name: Floral foam brick
-    Size
-        Width: 22,5cm
-        Height: 10,6cm
-        Depth: 8cm
+        Name: Floral foam brick
+        Size
+            Width: 22,5cm
+            Height: 10,6cm
+            Depth: 8cm
 
 - A line can't stay empty
 - A line must begin with a capital
@@ -46,13 +46,18 @@ Source code of the physical sculpture 1962. In this file are depicted and docume
 
 ### Main informations
 
+Details to understand file INSTALLATION file:
+
     *     = Required informations
     //    = comments
     Text: = needs a nalue
     Text  = is a title
 
+The INSTALLATION file:
+
     Title: *
-        Project curator: *
+        Project curator: * // Name of the owner of the project
+        Repository URL: * // Ex.: https://github.com/raphaelbastide/1962
         Physical location
             Latitude: *
             Longitude: *
@@ -63,55 +68,33 @@ Source code of the physical sculpture 1962. In this file are depicted and docume
             Width: *
             Height: *
             Depth:
-        Position of the origin: * // free description of a point. Each object's position will be relative to this point.
+        Position of the origin: * // Free description of a point. Each object's position will be relative to this point.
         Capture hardware
             Type: // Can be photographic, video, video stream, drawing, 3D capture…
             Model: // free description
-            X position:
+            X position: // Relative to the given origin
             Y position:
             Z position:
             Angle:
         Lighting hardware
-            Natural // or:
-            X position:
+            Natural // or, if artificial:
+            X position: // Relative to the given origin
             Y position:
             Z position:
             Angle:
-        Objects
-            ID: // Define the identifier for the object. First one must be 0, the 1, 2, 3…
-                Name: // A name of the object
+        Objects *
+            ID: * // Define the identifier for the object. First one must be 0, then 1, 2, 3…
+                Name: * // A name of the object
                 Size
-                    Width:
-                    Height:
-                    Depth:
+                    Width: *
+                    Height: *
+                    Depth: *
                 Position
-                    X position: 0
-                    Y position: 0
-                    Z position: 0
-                    Position description: The plank is put down on the floor on its bigger facet the simpler way
-                Color / texture: White
-            ID: 2
-                Name: Floral foam brick
-                Size
-                    Width: 22,5cm
-                    Height: 10,6cm
-                    Depth: 8cm
-                Position
-                    X position: 14cm
-                    Y position: 28cm
-                    Z position: 0.4cm
-                    Position description: The floral foam brick is put down on the white plank on its largest side the simpler way
-                Color / texture: Pale green
-           ID: 3
-                Name: External hard disk drive
-                Model: Pika One FLS-U2-160
-                Size
-                    Width: 20,5cm
-                    Height: 14,5cm
-                    Depth: 3cm
-                Position
-                    X position: 14cm
-                    Y position: 28cm
-                    Z position: 
-                    Position description: The External hard disk drive is partly embedded into the top side of the floral foam brick. Angle and embed depth are free.
-                Color / texture: Pale green 
+                    X position: * // Relative to the given origin
+                    Y position: *
+                    Z position: *
+                    Position description: // Free description of the position.
+                Color / texture:
+            ID: 1 // Here can begin a second object
+                Name: 
+                ...

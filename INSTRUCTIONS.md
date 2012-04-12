@@ -1,23 +1,23 @@
-# 1962 Documentation
+# 1962 INSTRUCTIONS
 
 ## Architecture and files
 
 The project contains:
 
-- doc.md
 - README
+- INSTRUCTIONS.md
 - CONTRIBUTORS
 - INSTALLATION
 - /media
 - /extra
 
-### doc.md
-
-The file you are reading now. It explains the project and how to participate. This file follows the [Markdown](http://daringfireball.net/projects/markdown/syntax) syntax.
-
 ### README.md
 
 Summary of the project used for the GitHub project homepage and the project website. This file follows the [Markdown](http://en.wikipedia.org/wiki/Markdown) syntax.
+
+### INSTRUCTIONS.md
+
+The file you are reading now. It explains the project and how to participate. This file follows the [Markdown](http://daringfireball.net/projects/markdown/syntax) syntax.
 
 ### CONTRIBUTORS
 

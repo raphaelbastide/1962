@@ -1,4 +1,4 @@
-# 1962 INSTRUCTIONS
+# 1962 Instructions
 
 ## Architecture and files
 
@@ -7,7 +7,7 @@ The project contains:
 - README
 - INSTRUCTIONS.md
 - CONTRIBUTORS
-- INSTALLATION
+- PIECE
 - /media
 - /extra
 
@@ -23,7 +23,7 @@ The file you are reading now. It explains the project and how to participate. Th
 
 List of the contributors to the project. To write / edit this file, see *Syntax*.
 
-### INSTALLATION
+### PIECE
 
 Source code of the physical sculpture 1962. In this file are depicted and documented all the objects which constitute a sculpture version and all the informations about the sculpture version itself.
 
@@ -37,7 +37,7 @@ Folder (optional). It can be used as an addenda, an annexe or the archive of com
 
 ## Syntax
 
-1962's files CONTRIBUTORS and INSTALLATION follow a couple of simple syntaxic rules:
+1962's files CONTRIBUTORS and PIECE follow a couple of simple syntaxic rules:
 
 ### Basics
 
@@ -56,14 +56,14 @@ Folder (optional). It can be used as an addenda, an annexe or the archive of com
 
 ### Main informations
 
-Details to understand the INSTALLATION file:
+Details to understand the PIECE file:
 
     *     = Required informations
     //    = Comments
     Text: = Needs a nalue
     Text  = Is a title
 
-The INSTALLATION file template:
+The PIECE file template:
 
     Title: 1962
         Branch name: * // Ex.: Master

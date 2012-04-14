@@ -23,7 +23,7 @@ To make your own sculpture:
 
 1. Read the content of the file INSTRUCTIONS.md
 2. Fork the project in your own repository
-3. Modify the file INSTALLATION
+3. Modify the file PIECE
 4. Apply the changes physically
 
 ### Modification
@@ -36,7 +36,7 @@ To request a modification of this sculpture, you need to:
 
 You can also open an issue on the <a href="https://github.com/raphaelbastide/1962/issues">GitHub issue page</a> for minor changes.
 
-As the content of the [documentation](https://github.com/raphaelbastide/1962/blob/master/INSTALLATION) must be as precise as possible, the interpretations of each pieces must be as close to this documentation as possible.
+As the content of the [documentation](https://github.com/raphaelbastide/1962/blob/master/PIECE) must be as precise as possible, the interpretations of each pieces must be as close to this documentation as possible.
 A contribution can be discussed only if it follows the instructions ([INSTRUCTIONS.md](https://github.com/raphaelbastide/1962/blob/master/INSTRUCTIONS.md)).
 Each clones must accept to be shown in a form.
 

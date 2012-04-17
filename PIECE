@@ -1,0 +1,35 @@
+Title: 1962
+    Project curator: Raphaël Bastide
+	Repository URL: https://github.com/raphaelbastide/1962
+    Physical location
+        Latitude: 48.8512°
+        Longitude: 2.3688°
+        Altitude: 42m
+        City: Paris
+        Country: France
+    Sculpture surface
+        Width: 60cm
+        Height: 49cm
+    Position of the origin: At the top left of the white plank, see v0.1 
+    Capture hardware
+        Type: Photographic
+        Model: Digital Camera
+        X position: 30cm
+        Y position: 56cm
+        Z position: 136cm
+        Direction: Face the installation
+    Lighting hardware
+        natural
+    Objects
+        ID: 1
+            Name: White plank
+            Size
+                Width: 60cm
+                Height: 49cm
+                Depth: 0.4cm
+            Position
+                X position: 0
+                Y position: 0
+                Z position: 0
+                Position description: The plank is put down on the floor on its bigger facet the simpler way
+            Color / texture: White

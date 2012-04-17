@@ -31,6 +31,8 @@ Source code of the physical sculpture 1962. In this file are depicted and docume
 
 Folder containing images of the current state of the piece and archives of past versions. This folder must be updated at least with photographs of the sculpture for each versions.
 
+In /media, documents must be named using the tag of the last commit. For exemple: 0.jpg will be a photograph of the version 0 of 1962 ; 2_5.ogg can be a video capture of the version 2.5 of 1962…
+
 ### /extra
 
 Folder (optional). It can be used as an addenda, an annexe or the archive of complementary documents such as process pictures, drawings films…
@@ -66,7 +68,6 @@ Details to understand the PIECE file:
 The PIECE file template:
 
     Title: 1962
-        Branch name: * // Ex.: Master
         Project curator: * // Name of the owner of the project
         Repository URL: * // Ex.: https://github.com/raphaelbastide/1962
         Physical location
@@ -79,22 +80,22 @@ The PIECE file template:
             Width: *
             Height: *
             Depth:
-        Position of the origin: * // Free description of a point. Each object's position will be relative to this point.
+        Position of the origin: * // Free description of a point. Each object's position will be relative to this point
         Capture hardware
             Type: // Can be photographic, video, video stream, drawing, 3D capture…
             Model: // free description
             X position: // Relative to the given origin
             Y position:
             Z position:
-            Angle:
+            Dirrection: // Can be a free description or more precise
         Lighting hardware
             Natural // or, if artificial:
             X position: // Relative to the given origin
             Y position:
             Z position:
-            Angle:
+            Dirrection: // Can be a free description or more precise
         Objects *
-            ID: * // Define the identifier for the object. First one must be 0, then 1, 2, 3…
+            ID: * // Define the identifier for the object - First one must be 1, then 2, 3…
                 Name: * // A name of the object
                 Size
                     Width: *
@@ -104,8 +105,8 @@ The PIECE file template:
                     X position: * // Relative to the given origin
                     Y position: *
                     Z position: *
-                    Position description: // Free description of the position.
+                    Position description: // Free description of the position
                 Color / texture:
-            ID: 1 // Here can begin a second object
+            ID: 2 // Here can begin a second object description
                 Name: 
                 ...

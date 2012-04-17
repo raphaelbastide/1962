@@ -1,10 +1,10 @@
 # 1962
 
-Sculptures conceptualized using a revision control system and physically represented.
+Sculptures conceptualized using a revision control system and represented physically.
 
 ## What
 
-In one or many physical place(s), an interpretation of the source code hosted on this GitHub repository or one of its branch will be named "1962" + [branch name].
+In one or many physical place(s), an interpretation of the source code hosted on this GitHub repository or one of its branch will be named "1962" + [tag name].
 
 For more detail about the project architecture, see [INSTRUCTIONS.md](https://github.com/raphaelbastide/1962/blob/master/INSTRUCTIONS.md).
 
@@ -48,5 +48,8 @@ Suggestions, bug reports, issues and pull requests are discussed on the [GitHub 
 
 This project is under [MIT LICENSE](http://raphael.mit-license.org/).
 
-Initiated by Raphaël Bastide in february 2012 — Contact: bonjour/at/raphaelbastide.com
-Inspired by Robert Morris _Card File_, 1962
+Initiated by Raphaël Bastide in february 2012
+
+Contact: bonjour/at/raphaelbastide.com
+
+This project is inspired by Robert Morris _Card File_, 1962.

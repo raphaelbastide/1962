@@ -75,6 +75,7 @@ border-color:#000;
 }
 #piece pre{
 background:#F1F6F3;
+white-space: pre-wrap;
 }
 footer{
 clear:both;

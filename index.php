@@ -13,9 +13,9 @@
                        $json = array();
                        $json['repo'] = json_decode(get('http://github.com/api/v2/json/repos/show/raphaelbastide/'.$plugin),true);
                        $json['commit'] = json_decode(get('http://github.com/api/v2/json/commits/list/raphaelbastide/'.$plugin.'/master'),true);
-                       $json['readme'] = json_decode(get('http://github.com/api/v2/json/blob/show/raphaelbastide/'.$plugin.'/'.$json['commit']['commits'][0]['parents'][0]['id'].'/README.md'),true);
-                       $json['piece'] = json_decode(get('http://github.com/api/v2/json/blob/show/raphaelbastide/'.$plugin.'/'.$json['commit']['commits'][0]['parents'][0]['id'].'/PIECE'),true);
-                       $json['contributors'] = json_decode(get('http://github.com/api/v2/json/blob/show/raphaelbastide/'.$plugin.'/'.$json['commit']['commits'][0]['parents'][0]['id'].'/CONTRIBUTORS'),true);
+                       $json['readme'] = json_decode(get('http://github.com/api/v2/json/blob/show/raphaelbastide/'.$plugin.'/'.$json['commit']['commits'][0]['id'].'/README.md'),true);
+                       $json['piece'] = json_decode(get('http://github.com/api/v2/json/blob/show/raphaelbastide/'.$plugin.'/'.$json['commit']['commits'][0]['id'].'/PIECE'),true);
+                       $json['contributors'] = json_decode(get('http://github.com/api/v2/json/blob/show/raphaelbastide/'.$plugin.'/'.$json['commit']['commits'][0]['id'].'/CONTRIBUTORS'),true);
                        file_put_contents($file,json_encode($json));
                    return($json);
                  }
@@ -95,15 +95,11 @@
             </div>
             <div id="piece">
                 <h2>Current state of the PIECE file</h2>
-                <pre>
-                    <?php echo markdown($piece); ?>
-                <pre>
+                <pre><?php echo markdown($piece); ?></pre>
             </div>
             <div id="contributors">
                 <h2>Contributors</h2>
-                <pre>
-                    <?php echo $contributors ?>
-                </pre>
+                <pre><?php echo $contributors ?></pre>
             </div>
         </div>
         <div id="colB">

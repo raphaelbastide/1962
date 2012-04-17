@@ -13,9 +13,9 @@
                        $json = array();
                        $json['repo'] = json_decode(get('http://github.com/api/v2/json/repos/show/raphaelbastide/'.$plugin),true);
                        $json['commit'] = json_decode(get('http://github.com/api/v2/json/commits/list/raphaelbastide/'.$plugin.'/master'),true);
-                       $json['readme'] = json_decode(get('http://github.com/api/v2/json/blob/show/raphaelbastide/'.$plugin.'/'.$json['commit'][commits][0]['parents'][0]['id'].'/README.md'),true);
-                       $json['piece'] = json_decode(get('http://github.com/api/v2/json/blob/show/raphaelbastide/'.$plugin.'/'.$json['commit'][commits][0]['parents'][0]['id'].'/PIECE'),true);
-                       $json['contributors'] = json_decode(get('http://github.com/api/v2/json/blob/show/raphaelbastide/'.$plugin.'/'.$json['commit'][commits][0]['parents'][0]['id'].'/CONTRIBUTORS'),true);
+                       $json['readme'] = json_decode(get('http://github.com/api/v2/json/blob/show/raphaelbastide/'.$plugin.'/'.$json['commit']['commits'][0]['parents'][0]['id'].'/README.md'),true);
+                       $json['piece'] = json_decode(get('http://github.com/api/v2/json/blob/show/raphaelbastide/'.$plugin.'/'.$json['commit']['commits'][0]['parents'][0]['id'].'/PIECE'),true);
+                       $json['contributors'] = json_decode(get('http://github.com/api/v2/json/blob/show/raphaelbastide/'.$plugin.'/'.$json['commit']['commits'][0]['parents'][0]['id'].'/CONTRIBUTORS'),true);
                        file_put_contents($file,json_encode($json));
                    return($json);
                  }
@@ -55,6 +55,21 @@
            $contributors= $github_json['contributors']['blob']['data'];
     
         }//end if
+        
+        // IMG cache (thanks to Pierre Bertet)
+        
+        $cacheimg_file = __DIR__ . '/cacheimg.json';
+        
+        function cacheimg_data($cacheimg_file) {
+            $data = file_get_contents('https://api.github.com/repos/raphaelbastide/1962/git/trees/master?recursive=1');
+            $data = json_decode($data);
+            $tree = $data->tree;
+            $tree = array_filter($tree, function($obj) {
+                return preg_match('/^media\/archive\/.+/', $obj->path);
+            });
+            file_put_contents('cacheimg.json', json_encode($tree));
+        }
+        
     ?>
 <!doctype html>
 <head>
@@ -75,7 +90,7 @@
     <div id="content">
         <div id="colA">
             <div id="readme">
-                <div id="fork"><a href="https://github.com/raphaelbastide/1962">Fork</a></div>
+                <a id="fork" href="https://github.com/raphaelbastide/1962">Fork</a>
                 <?php echo markdown($readme); ?>
             </div>
             <div id="piece">
@@ -92,9 +107,25 @@
             </div>
         </div>
         <div id="colB">
+        <?
+            function readimg_data($cacheimg_file) {
+                $data = file_get_contents('cacheimg.json');
+                $tree = json_decode($data);
+                foreach ($tree as $img) {
+                    echo '<img src="https://github.com/raphaelbastide/1962/raw/master/'.$img->path.'" />';
+                }
+            }
             
+            if (!file_exists($cacheimg_file)) {
+                cacheimg_data($cacheimg_file);
+            }
+            
+            readimg_data($cacheimg_file);
+        ?>                        
         </div>
     </div>
-
+    <footer>
+    This website is synchronized each 24h with the <a href="https://github.com/raphaelbastide/1962">1962 GitHub repository</a>. The source of this website is <a href="https://github.com/raphaelbastide/Website-for-1962/">public and open source</a>.
+    </footer>
 </body>
 </html>

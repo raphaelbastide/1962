@@ -2,8 +2,9 @@ html{height:100%;color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3
 
 body{
 font-family:Karla,verdana;
-margin: 0 auto 40px auto;
+margin: 0 auto 0 auto;
 width: 80%;
+min-width:500px;
 max-width:1000px;
 font-size:18px;
 }
@@ -32,8 +33,10 @@ a{color:black;}
 a:hover{text-decoration:none;}
 
 pre{
-font-family:cousine, monospace;
+font-family:AnkaCoderRegular, cousine, monospace;
 font-size:15px;
+line-height:21px;
+letter-spacing:1px;
 }
 ol, ul{
 list-style-type:decimal;
@@ -82,5 +85,16 @@ clear:both;
 margin-top:30px;
 font-size:12px;
 border-top:2px solid black;
-padding:10px 0 0 0;
+padding:10px 0 20px 0;
+}
+
+@font-face {
+    font-family: 'AnkaCoderRegular';
+    src: url('font/ankacoder-r-webfont.eot');
+    src: url('font/ankacoder-r-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/ankacoder-r-webfont.woff') format('woff'),
+         url('font/ankacoder-r-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
 }

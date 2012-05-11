@@ -48,8 +48,8 @@ Suggestions, bug reports, issues and pull requests are discussed on the [GitHub 
 
 This project is under [MIT LICENSE](http://raphael.mit-license.org/).
 
-Initiated by Raphaël Bastide in february 2012
+Initiated by Raphaël Bastide in february 2012.
+
+After Robert Morris _Card File_, 1962.
 
 Contact: bonjour/at/raphaelbastide.com
-
-This project is inspired by Robert Morris _Card File_, 1962.

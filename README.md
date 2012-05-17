@@ -4,9 +4,9 @@ Sculptures conceptualized using a revision control system and represented physic
 
 ## What
 
-In one or many physical place(s), an interpretation of the source code hosted on this GitHub repository or one of its branch will be named "1962" + [tag name].
+Any physical interpretation of the PIECE documentation hosted on [this GitHub repository](https://github.com/raphaelbastide/1962), or a versions of it will be part of the 1962 project.
 
-For more detail about the project architecture, see [INSTRUCTIONS.md](https://github.com/raphaelbastide/1962/blob/master/INSTRUCTIONS.md).
+For more details about the project architecture, see [INSTRUCTIONS.md](https://github.com/raphaelbastide/1962/blob/master/INSTRUCTIONS.md).
 
 ## How
 

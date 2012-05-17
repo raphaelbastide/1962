@@ -30,7 +30,7 @@ p{
 	margin:0 0 10px 0;
 }
 pre{
-	font-family:AnkaCoderRegular, cousine, monospace;
+	font-family:AnkaHackerRegular,Anka Hacker, cousine, monospace;
 	font-size:15px;
 	line-height:21px;
 	letter-spacing:1px;
@@ -88,12 +88,12 @@ footer{
 }
 
 @font-face {
-	font-family: 'AnkaCoderRegular';
-	src: url('font/ankacoder-r-webfont.eot');
-	src: url('font/ankacoder-r-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('font/ankacoder-r-webfont.woff') format('woff'),
-		 url('font/ankacoder-r-webfont.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'AnkaHackerRegular';
+    src: url('font/ankahacker-r.eot');
+    src: url('font/ankahacker-r.eot?#iefix') format('embedded-opentype'),
+         url('font/ankahacker-r.woff') format('woff'),
+         url('font/ankahacker-r.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 
 }

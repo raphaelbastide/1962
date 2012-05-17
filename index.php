@@ -44,7 +44,7 @@
         } else {
              $plugin = '1962';
         }
-        $cache_path = $plugin.'-github-cache.txt';
+        $cache_path = 'cache-'.$plugin.'-github.txt';
         $github_json = get_repo_json($cache_path,$plugin);
         if($github_json) {
            /* build content */
@@ -58,7 +58,7 @@
         
         // IMG cache (thanks to Pierre Bertet)
         
-        $cacheimg_file = __DIR__ . '/cacheimg.json';
+        $cacheimg_file = __DIR__ . '/cache-img.json';
         
         function cacheimg_data($cacheimg_file) {
             $data = file_get_contents('https://api.github.com/repos/raphaelbastide/1962/git/trees/master?recursive=1');
@@ -67,7 +67,7 @@
             $tree = array_filter($tree, function($obj) {
                 return preg_match('/^media\/archive\/.+/', $obj->path);
             });
-            file_put_contents('cacheimg.json', json_encode($tree));
+            file_put_contents('cache-img.json', json_encode($tree));
         }
         
     ?>
@@ -78,8 +78,8 @@
     <title><?php echo$name; ?> — <?php echo$desc; ?> 
 </title>
     <meta name="description" content="">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" media="all" href="css/main.css">
+    <link rel="stylesheet" type="text/css" media="print" href="css/print.css" />    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'></head>
 <body>
 
@@ -93,6 +93,7 @@
                 <a id="fork" href="https://github.com/raphaelbastide/1962">Fork</a>
                 <?php echo markdown($readme); ?>
             </div>
+            <div class="page-break"></div>
             <div id="piece">
                 <h2>Current state of the PIECE file</h2>
                 <pre><?php echo markdown($piece); ?></pre>
@@ -105,7 +106,7 @@
         <div id="colB">
         <?
             function readimg_data($cacheimg_file) {
-                $data = file_get_contents('cacheimg.json');
+                $data = file_get_contents('cache-img.json');
                 $tree = json_decode($data);
                 foreach ($tree as $img) {
                     echo '<img src="https://github.com/raphaelbastide/1962/raw/master/'.$img->path.'" />';
@@ -121,7 +122,20 @@
         </div>
     </div>
     <footer>
-    This website is synchronized each 24h with the <a href="https://github.com/raphaelbastide/1962">1962 GitHub repository</a>. The source of this website is <a href="https://github.com/raphaelbastide/Website-for-1962/">public and open source</a>.
+    This web page is synchronized each 24h with the <a href="https://github.com/raphaelbastide/1962">1962 GitHub repository</a>. The source of this website is <a href="https://github.com/raphaelbastide/Website-for-1962/">public and open source</a>.
     </footer>
+    <script type="text/javascript">
+    
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-26267672-3']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    
+    </script>
 </body>
 </html>

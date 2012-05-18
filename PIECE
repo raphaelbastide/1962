@@ -49,13 +49,14 @@ Title: 1962
         ID: 3
             Name: Mirror
             Size
-                Width: 15cm
-                Height: 30cm
+                Width:  30cm
+                Height: 0,5cm
+		depth : 15cm
             Position
                 X position: 14.5cm
                 Y position: 0
                 Z position: 17cm
-                Position description: Leaning against the wall (ID=2)
+                Position description: Placed on the floor
             Color / texture: Reflective
         ID: 4
             Name: Table leg
@@ -87,7 +88,10 @@ Title: 1962
                 Height: 4.5cm
                 Depth: 1.5cm
             Position
-                Position description: Behind the mirror (ID=3), led in the direction (0X)
+		X position: 6.5cm
+                Y position: 0
+                Z position: 8cm
+                Position description: Led in the direction (0X)
             Mode: Blink
             Color / texture: Red
         ID: 7

@@ -1,6 +1,7 @@
 Title: 1962
     Project curator: Raphaël Bastide
-	Repository URL: https://github.com/raphaelbastide/1962
+    Version: 0.2
+    Repository URL: https://github.com/raphaelbastide/1962
     Physical location
         Latitude: 48.8512°
         Longitude: 2.3688°
@@ -11,6 +12,7 @@ Title: 1962
         Width: 60cm
         Height: 49cm
     Position of the origin: At the top left of the white plank, see v0.1 
+    Mathematic basis: Orthonormal
     Capture hardware
         Type: Photographic
         Model: Digital Camera
@@ -33,3 +35,68 @@ Title: 1962
                 Z position: 0
                 Position description: The plank is put down on the floor on its bigger facet the simpler way
             Color / texture: White
+        ID: 2
+            Name: Wall
+            Size
+                Width: 60cm
+                Height: 130cm
+            Position
+                X position: 0
+                Y position: 0
+                Z position: 0
+                Position description: Belongs to the (Y0X) plane
+            Color / texture: White
+        ID: 3
+            Name: Mirror
+            Size
+                Width: 15cm
+                Height: 30cm
+            Position
+                X position: 6.5cm
+                Y position: 0
+                Z position: 8cm
+                Position description: Leaning against the wall (ID=2)
+            Color / texture: Reflective
+        ID: 4
+            Name: Table leg
+            Size
+                Width: 2.5cm
+                Height: 70cm
+            Position
+                X position: 44.5cm
+                Y position: 0
+                Z position: 21cm
+                Position description: Put down on the plank (ID=1) on its base
+            Color / texture: Stainless steel
+        ID: 5
+            Name: Bicycle led
+            URL: http://www.hema.nl/winkel/altijd-lage-prijzen/2-pak-mini-led-lampjes-%2841155070%29
+            Size
+                Width: 3cm
+                Height: 4.5cm
+                Depth: 1.5cm
+            Position
+                Position description: Put down on the top of the Table leg (ID=4), led in front of the camera
+            Mode: On
+            Color / texture: White
+        ID: 6
+            Name: Bicycle led
+            URL: http://www.hema.nl/winkel/altijd-lage-prijzen/2-pak-mini-led-lampjes-%2841155070%29
+            Size
+                Width: 3cm
+                Height: 4.5cm
+                Depth: 1.5cm
+            Position
+                Position description: Behind the mirror (ID=3), led in the direction (0X)
+            Mode: Blink
+            Color / texture: Red
+        ID: 7
+            Name: Pétanque ball
+            Size
+                Diametre: 6.8cm
+            Position
+                X position: 27cm
+                Y position: 33cm
+                Z position: 0cm
+                Position description: Put down on the plank (ID=2)
+            Color / texture: Smooth and chromium-plated

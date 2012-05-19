@@ -37,8 +37,9 @@ h1{	font-size:35px;	margin:0 0 20px 0;}
 h2{	font-size:15px;	margin:17px 0 7px 0;}
 h3{	font-size:14px;	margin:15px 0 7px 0;}
 p{margin:0 0 5px 0;}
-#piece{
-	font-size:14px;
+#piece pre{
+	font-size:15px;
+	line-height:1.4em;
 }
 #piece h2{
 	margin-bottom:20px;

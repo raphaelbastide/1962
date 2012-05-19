@@ -89,8 +89,11 @@
     ?> 
     <div id="content">
         <div id="colA">
+            <ul id="menu">
+                <li><a id="archives-link" href="#archives">Archives</a></li>
+                <li><a id="fork" href="https://github.com/raphaelbastide/1962">Fork</a></li>
+            </ul>
             <div id="readme">
-                <a id="fork" href="https://github.com/raphaelbastide/1962">Fork</a>
                 <?php echo markdown($readme); ?>
             </div>
             <div class="page-break"></div>
@@ -104,28 +107,83 @@
             </div>
         </div>
         <div id="colB">
-        <?
-            function readimg_data($cacheimg_file) {
+        <?php        
+
+            function readimg_data($cacheimg_file, $load, $showLast) {
                 $data = file_get_contents('cache-img.json');
                 $tree = json_decode($data);
-                foreach ($tree as $img) {
-                    echo '<img src="https://github.com/raphaelbastide/1962/raw/master/'.$img->path.'" />';
+                // Regex replacement
+                $patterns = array();
+                $patterns[0] = '/_/';
+                $patterns[1] = '/.jpg/';
+                $replacements = array();
+                $replacements[0] = '.';
+                $replacements[1] = '';
+                
+                // If we want to show all the images
+                if (!$showLast){
+                    foreach ($tree as $img) {
+                        $path = explode('/', $img->path);
+                        $filename = $path[count($path)-1];
+                        // If we want to load the image
+                        if ($load){
+                            echo '<div class="imgbox">';
+                            echo '<img src="https://github.com/raphaelbastide/1962/raw/master/'.$img->path.'" />';
+                            echo '<div class="caption">v'.preg_replace($patterns, $replacements, $filename).'</div>';
+                            echo '</div>';
+                        // If we don't want to load the image, src is placed in a 'data-src' attribute
+                        }else{
+                            echo '<div class="imgbox">';
+                            echo '<img data-src="https://github.com/raphaelbastide/1962/raw/master/'.$img->path.'" />';                    
+                            echo '<div class="caption">v'.preg_replace($patterns, $replacements, $filename).'</div>';
+                            echo '</div>';
+                        }
+                    }
+                // If we want to show the last image only
+                }else{
+                    $numItems = count($tree);
+                    $i = 0;
+                    foreach ($tree as $img) {
+                        $path = explode('/', $img->path);
+                        $filename = $path[count($path)-1];
+                        if($i == $numItems) {
+                            if ($load){
+                                echo '<img src="https://github.com/raphaelbastide/1962/raw/master/'.$img->path.'" />';
+                                echo '<div class="caption">v'.preg_replace($patterns, $replacements, $filename).'</div>';
+
+                            }else{
+                                echo '<img data-src="https://github.com/raphaelbastide/1962/raw/master/'.$img->path.'" />';                    
+                                echo '<div class="caption">v'.preg_replace($patterns, $replacements, $filename).'</div>';
+                            }
+                        }
+                        $i++;
+                    }
                 }
+                
             }
             
+            // In colB, we want to load the last image only
             if (!file_exists($cacheimg_file)) {
-                cacheimg_data($cacheimg_file);
+                cacheimg_data($cacheimg_file, true, true);
             }
-            
-            readimg_data($cacheimg_file);
+            readimg_data($cacheimg_file, true, true);
         ?>                        
         </div>
+    </div>
+    <div id="archives">
+        <h2>Archives</h2>
+        <?
+            // In archives, we want to (not)load all the images, it will be loaded using JavaScript
+            readimg_data($cacheimg_file, false, false);
+        ?>                        
     </div>
     <footer>
     This web page is synchronized each 24h with the <a href="https://github.com/raphaelbastide/1962">1962 GitHub repository</a>. The source of this website is <a href="https://github.com/raphaelbastide/Website-for-1962/">public and open source</a>.
     </footer>
+    <script src="js/libs/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/libs/jquery.history.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
-    
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-26267672-3']);
       _gaq.push(['_trackPageview']);
@@ -134,8 +192,7 @@
         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    
+      })();    
     </script>
 </body>
 </html>

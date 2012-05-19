@@ -35,7 +35,7 @@ pre{
 	line-height:21px;
 	letter-spacing:1px;
 }
-ol, ul{
+#readme ol,#readme ul{
 	list-style-type:decimal;
 	padding:0 0 0 60px;
 	margin:0 0 10px 0;
@@ -53,18 +53,25 @@ ol, ul{
 #colB img{
 	width:100%;
 	max-width:600px;
-	margin:0 0 20px 0;
+	margin:0;
 }
-a#fork{
+#menu{
+	position:absolute;
+	top:70px;
+	left: 45%;
+}
+#menu li{
+	margin:0 20px 0 0;
+	float:left;
+	list-style-type:none;
+}
+#menu a{
 	display:block;
 	width :70px;
 	text-align:center;
 	padding:4px 5px;
 	border:2px solid #56B795;
 	color:#56B795;
-	position:absolute;
-	top:70px;
-	left:50%;
 	text-decoration:none;
 }
 a{color:black;}
@@ -78,6 +85,22 @@ a#fork:active{
 #piece pre{
 	background:#F1F6F3;
 	white-space: pre-wrap;
+}
+#archives{
+	display:none;
+}
+#archives .imgbox{
+	width:200px;
+	float:left;
+	margin:0 50px 20px 0;
+}
+#archives img{
+	width:200px;
+}
+.caption{
+	font-family:AnkaHackerRegular,Anka Hacker, cousine, monospace;
+	font-size:12px;
+	margin:0 0 15px 0;
 }
 footer{
 	clear:both;

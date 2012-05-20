@@ -49,14 +49,13 @@ Title: 1962
         ID: 3
             Name: Mirror
             Size
-                Width:  30cm
-                Height: 0,5cm
-		depth : 15cm
+                Width:  15cm
+                Height: 30cm
             Position
                 X position: 14.5cm
                 Y position: 0
                 Z position: 17cm
-                Position description: Placed on the floor
+                Position description: Placed on the floor, reflective face up. Rotation of 90°clockwise.
             Color / texture: Reflective
         ID: 4
             Name: Table leg

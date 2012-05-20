@@ -88,8 +88,9 @@
     <div id="content">
         <div id="colA">
             <ul id="menu">
-                <li><a id="archives-link" href="#archives">Archives</a></li>
                 <li><a id="fork" href="https://github.com/raphaelbastide/1962">Fork</a></li>
+                <li><a id="archives-link" href="#archives">Archives</a></li>
+                <li><a class="top" href="#content">⬆</a></li>
             </ul>
             <div id="readme">
                 <?php echo markdown($readme); ?>
@@ -170,18 +171,20 @@
         </div>
     </div>
     <div id="archives">
-        <h2>Archives</h2>
-        <?
-            // In archives, we want to (not)load all the images, it will be loaded using JavaScript
-            readimg_data($cacheimg_file, false, false);
-        ?>                        
+        <div id="inner">
+            <h2>Archives</h2>
+            <?
+                // In archives, we want to (not)load all the images, it will be loaded using JavaScript
+                readimg_data($cacheimg_file, false, false);
+            ?>                        
+        </div>
     </div>
     <footer>
     This web page is synchronized each 24h with the <a href="https://github.com/raphaelbastide/1962">1962 GitHub repository</a>. The source of this website is <a href="https://github.com/raphaelbastide/Website-for-1962/">public and open source</a>.
     </footer>
     <script src="js/libs/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/libs/jquery.history.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-26267672-3']);

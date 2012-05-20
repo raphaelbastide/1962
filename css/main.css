@@ -63,13 +63,13 @@ pre{
 	-webkit-transition-property: all;
 	-moz-transition-property: all;
 	transition-property: all;
-	-moz-transition-duration: 0.1s;
-	-o-transition-duration: 0.1s;
-	-webkit-transition-duration: 0.1s;
-	-ms-transition-duration: 0.1s;
-	-webkit-transition-duration: 0.1s;
-	-moz-transition-duration: 0.1s;
-	transition-duration: 0.1s;
+	-moz-transition-duration: 0.2s;
+	-o-transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+	-ms-transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+	-moz-transition-duration: 0.2s;
+	transition-duration: 0.2s;
 	-moz-transition-timing-function: ease-out;
 	-o-transition-timing-function: ease-out;
 	-webkit-transition-timing-function: ease-out;
@@ -79,15 +79,21 @@ pre{
 	transition-timing-function: ease-out;
   	position:absolute;
 	top:70px;
-	left: 45%;
+	right: 40%;
 }
 #menu.fixed{
 	position:fixed;
 	top:0;
 }
+#menu .top{
+	display:none;
+}
+#menu.fixed .top{
+	display:block;
+}
 #menu li{
-	margin:0 20px 0 0;
-	float:left;
+	margin:0 0 0 20px;
+	float:right;
 	list-style-type:none;
 }
 #menu a{
@@ -112,11 +118,12 @@ a:hover{text-decoration:none;}
 	background:#F1F6F3;
 	white-space: pre-wrap;
 }
-#archives{
+#archives #inner{
 	display:none;
 }
 #archives .imgbox{
 	width:200px;
+	height:299px;
 	float:left;
 	margin:0 50px 20px 0;
 }

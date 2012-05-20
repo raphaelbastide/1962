@@ -56,9 +56,34 @@ pre{
 	margin:0;
 }
 #menu{
-	position:absolute;
+	-moz-transition-property: all;
+	-o-transition-property: all;
+	-webkit-transition-property: all;
+	-ms-transition-property: all;
+	-webkit-transition-property: all;
+	-moz-transition-property: all;
+	transition-property: all;
+	-moz-transition-duration: 0.1s;
+	-o-transition-duration: 0.1s;
+	-webkit-transition-duration: 0.1s;
+	-ms-transition-duration: 0.1s;
+	-webkit-transition-duration: 0.1s;
+	-moz-transition-duration: 0.1s;
+	transition-duration: 0.1s;
+	-moz-transition-timing-function: ease-out;
+	-o-transition-timing-function: ease-out;
+	-webkit-transition-timing-function: ease-out;
+	-ms-transition-timing-function: ease-out;
+	-webkit-transition-timing-function: ease-out;
+	-moz-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+  	position:absolute;
 	top:70px;
 	left: 45%;
+}
+#menu.fixed{
+	position:fixed;
+	top:0;
 }
 #menu li{
 	margin:0 20px 0 0;
@@ -72,14 +97,15 @@ pre{
 	padding:4px 5px;
 	border:2px solid #56B795;
 	color:#56B795;
+	background:white;
 	text-decoration:none;
 }
 a{color:black;}
 a:hover{text-decoration:none;}
-a#fork:hover{
+#menu a:hover{
 	color:#000;
 }
-a#fork:active{
+#menu a:active{
 	border-color:#000;
 }
 #piece pre{

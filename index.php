@@ -52,8 +52,7 @@
            $desc= $github_json['repo']['repository']['description'];  
            $readme= $github_json['readme']['blob']['data'];
            $piece= $github_json['piece']['blob']['data'];
-           $contributors= $github_json['contributors']['blob']['data'];
-    
+           $contributors= $github_json['contributors']['blob']['data'];    
         }//end if
         
         // IMG cache (thanks to Pierre Bertet)
@@ -65,8 +64,7 @@
             $data = json_decode($data);
             $tree = $data->tree;
             $tree = array_filter($tree, function($obj) {
-                return preg_match('/^media\/archive\/.+/', $obj->path);
-            });
+                return preg_match('/^media\/archive\/[^(HD)]+/', $obj->path);           });
             file_put_contents('cache-img.json', json_encode($tree));
         }
         
@@ -150,7 +148,8 @@
                             if ($load){
                                 echo '<img src="https://github.com/raphaelbastide/1962/raw/master/'.$img->path.'" />';
                                 echo '<div class="caption">v'.preg_replace($patterns, $replacements, $filename).'</div>';
-
+                                //echo $commitDate;
+                            // Last image not loaded
                             }else{
                                 echo '<img data-src="https://github.com/raphaelbastide/1962/raw/master/'.$img->path.'" />';                    
                                 echo '<div class="caption">v'.preg_replace($patterns, $replacements, $filename).'</div>';

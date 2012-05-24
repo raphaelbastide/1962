@@ -145,7 +145,7 @@
                     foreach ($tree as $img) {
                         $path = explode('/', $img->path);
                         $filename = $path[count($path)-1];
-                        if($i == $numItems) {
+                        if($i == $numItems + 1) {
                             if ($load){
                                 echo '<img src="https://github.com/raphaelbastide/1962/raw/master/'.$img->path.'" />';
                                 echo '<div class="caption">v'.preg_replace($patterns, $replacements, $filename).'</div>';

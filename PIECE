@@ -11,14 +11,15 @@ Title: 1962
     Sculpture surface
         Width: 60cm
         Height: 49cm
-    Position of the origin: At the top left of the white plank, see v0.1 
     Mathematic basis: Orthonormal
+    Position of the origin: At the top left of the white plank, see v0.1
+    Default objects origin: Object's closest point to the main origin
     Capture hardware
         Type: Photographic
         Model: Digital Camera
         X position: 30cm
         Y position: 56cm
-        Z position: 136cm
+        Z position: 160cm
         Direction: Facing the installation
     Lighting hardware
         natural
@@ -36,35 +37,49 @@ Title: 1962
                 Position description: The plank is put down on the floor on its bigger facet the simpler way
             Color / texture: White
         ID: 2
+            Name: Wall
+            Size
+                Width: 60cm
+                Height: 130cm
+            Position
+                X position: 0
+                Y position: 0
+                Z position: 0
+                Position description: Belongs to the (Y0X) plane
+            Color / texture: White
+        ID: 3
+            Name: External hard drive
+            Size
+                Width: 20,5cm
+                Height: 11,5cm
+                Depth: 3cm
+            Position
+                X position: 18.75cm
+                Y position: 0
+                Z position: 19.75cm
+                Position description: Placed on the white plank (ID=1), the larger face down buttons face on the right
+            Color / texture: Gray, blue / mixed plastics 
+        ID: 4
+            Name: Tomato plant
+            Size
+                Diametre:12,7cm
+                Height: Variable
+            Position
+                X position: 30cm
+                Y position: 3cm
+                Z position: 24.5
+                Description: Contains a tomato plant, loam , clay pot, clay under-plate; The objects carry out theirs traditional roles
+                Position description: Put down on the External hard drive (ID=3), origin is the under-plate bottom center
+                Water addition: |
+        ID: 5
             Name: Mirror
             Size
                 Width: 15cm
                 Height: 30cm
+                Depth: 0.3cm
             Position
-                X position: 14.5cm
+                X position: 9cm
                 Y position: 0
-                Z position: 17cm
-                Position description: Placed on the floor, reflective face up, larger side follows (0X) axis
+                Z position: 16cm
+                Position description: Leaning against the wall (ID=2); Bottom right corner position X=21.5cm and Z=8cm, angle follows ; Reflective face visible
             Color / texture: Reflective
-        ID: 3
-            Name: Table leg
-            Size
-                Width: 2.5cm
-                Height: 70cm
-                Depth: 2.5cm
-            Position
-                X position: 44.5cm
-                Y position: 0
-                Z position: 21cm
-                Position description: Put down on the plank (ID=1) on its base
-            Color / texture: Stainless steel
-        ID: 4
-            Name: Pétanque ball
-            Size
-                Diametre: 6.8cm
-            Position
-                X position: 29,5cm
-                Y position: 0
-                Z position: 29,5cm
-                Position description: Put down on the plank (ID=2)
-            Color / texture: Smooth and chromium-plated

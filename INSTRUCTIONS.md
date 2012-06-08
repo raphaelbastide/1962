@@ -55,7 +55,7 @@ Folder (optional). It can be used as an addenda, an annexe or the archive of com
             Depth: 8cm
 
 - A line can't stay empty
-- A line must begin with a capital
+- A line must begin with a capital letter
 - A line can contain a title or a couple "key: value"
 
 ### Main informations
@@ -64,7 +64,7 @@ Details to understand the PIECE file:
 
     *     = Required informations
     //    = Comments
-    Text: = Needs a nalue
+    Text: = Needs a value
     Text  = Is a title
 
 The PIECE file template:
@@ -112,3 +112,13 @@ The PIECE file template:
             ID: 2 // Here can begin a second object description
                 Name: 
                 ...
+                
+### Evolutions of this INSTRUCTIONS file
+
+This INSTRUCTIONS file can and must envolve. I should be modified in order to accompany the PIECE file. For example if a new kind of object needs the creation of a new kind of key (property), it needs to be archived below:
+
+#### Nutrients
+
+Plant or animals needs water or food to live, a key "Additional water" or "Additional food" can be created, with scalable values such as units "|". Exemple for four water additions:
+
+    Additional water: ||||

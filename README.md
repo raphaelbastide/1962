@@ -17,7 +17,7 @@ Using a GitHub account, everybody can duplicate (fork) this project in order to:
 
 ### Representation
 
-Each representation must have its own public branch and archive. Each representation can differ than its parent. It must be documented with photographs or streamed video and must accept major modifications.
+Each representation must have its own public branch and archive. Each representation can differ from its parent. It must be documented with photographs or streamed video and must accept major modifications.
 
 To make your own sculpture:
 
@@ -36,9 +36,9 @@ To request a modification of this sculpture, you need to:
 
 You can also open an issue on the <a href="https://github.com/raphaelbastide/1962/issues">GitHub issue page</a> for minor changes.
 
-As the content of the [documentation](https://github.com/raphaelbastide/1962/blob/master/PIECE) must be as precise as possible, the interpretations of each pieces must be as close to this documentation as possible.
+As the content of the [documentation](https://github.com/raphaelbastide/1962/blob/master/PIECE) must be as precise as possible, the interpretations of each piece must be as close to this documentation as possible.
 A contribution can be discussed only if it follows the instructions ([INSTRUCTIONS.md](https://github.com/raphaelbastide/1962/blob/master/INSTRUCTIONS.md)).
-Each clones must accept to be shown in a form.
+Each clone must accept to be shown in a form.
 
 ### Issues
 

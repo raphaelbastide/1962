@@ -38,8 +38,8 @@ h2{	font-size:15px;	margin:17px 0 7px 0;}
 h3{	font-size:14px;	margin:15px 0 7px 0;}
 p{margin:0 0 5px 0;}
 #piece pre{
-	font-size:15px;
-	line-height:1.4em;
+	font-size:13px;
+	line-height:1.3em;
 }
 #piece h2{
 	margin-bottom:20px;
@@ -50,7 +50,7 @@ p{margin:0 0 5px 0;}
 	float: none !important;
 	margin:0;
 }
-#colB, a#fork, #contributors, footer{
+#colB, #menu, #contributors, footer{
 	display:none;
 }
 /*Page Break*/

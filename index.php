@@ -170,7 +170,8 @@
         ?>                        
         </div>
     </div>
-    <div id="archives">
+    <div class="page-break"></div>
+    <div id="archives" >
         <div id="inner">
             <h2>Archives</h2>
             <?

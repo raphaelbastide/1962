@@ -117,6 +117,8 @@ a:hover{text-decoration:none;}
 #piece pre{
 	background:#F1F6F3;
 	white-space: pre-wrap;
+	font-size: 0.8em;
+    line-height: 1.4em;
 }
 #archives #inner{
 	display:none;

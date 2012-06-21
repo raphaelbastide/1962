@@ -1,6 +1,6 @@
 Title: 1962
     Project curator: Raphaël Bastide
-    Version: 0.4
+    Version: 0.5
     Repository URL: https://github.com/raphaelbastide/1962
     Physical location
         Latitude: 48.8512°
@@ -22,7 +22,7 @@ Title: 1962
         Z position: 160cm
         Direction: Facing the installation
     Lighting hardware
-        natural
+        Natural
     Objects
         ID: 1
             Name: White plank
@@ -34,7 +34,7 @@ Title: 1962
                 X position: 0
                 Y position: 0
                 Z position: 0
-                Position description: The plank is put down on the floor on its bigger facet
+                Position description: The plank is put down on the floor on its bigger side
             Color / texture: White
         ID: 2
             Name: Wall
@@ -48,38 +48,41 @@ Title: 1962
                 Position description: Belongs to the (Y0X) plane
             Color / texture: White
         ID: 3
-            Name: External hard drive
+            Name: Synthetic lawn
             Size
-                Width: 20,5cm
-                Height: 11,5cm
-                Depth: 3cm
+                Width: 50cm
+                Height: 50cm
+                Depth: 2cm
             Position
-                X position: 18.75cm
-                Y position: 0
-                Z position: 19.75cm
-                Position description: Placed on the white plank (ID=1), the larger face down buttons face on the right
-            Color / texture: Gray, blue / mixed plastics 
+                X position: 5cm
+                Y position: 18cm
+                Z position: 35,5cm
+                Position description: Placed and centered on the white plank (ID=1), the grass side up; it falls from the wall to the floor such as a cyclo wall used in photography and forms a right angle.
+            Color / texture: Green grass / mixed plastics 
         ID: 4
             Name: Tomato plant
             Size
                 Diametre:12,7cm
                 Height: Variable
             Position
-                X position: 30cm
-                Y position: 3cm
-                Z position: 24.5
-                Description: Contains a tomato plant, loam , clay pot, clay under-plate; The objects carry out theirs traditional roles
-                Position description: Put down on the External hard drive (ID=3), origin is the under-plate bottom center
-                Water addition: |||||||
+                X position: 39cm
+                Y position: 2cm
+                Z position: 26cm
+                Position description: Put down on the synthetic lawn (ID=3), origin is the under-plate bottom center
+            Description: Contains a tomato plant, loam , clay pot, clay under-plate; The objects carry out theirs traditional roles
+            Water addition: |||||||
+            Color / texture: Brick, green, clay, plant
         ID: 5
-            Name: Mirror
+            Name: Bicycle led
+            URL: http://www.hema.nl/winkel/altijd-lage-prijzen/2-pak-mini-led-lampjes-%2841155070%29
             Size
-                Width: 15cm
-                Height: 30cm
-                Depth: 0.3cm
+                Width: 3cm
+                Height: 4.5cm
+                Depth: 1.5cm
             Position
-                X position: 9cm
-                Y position: 0
-                Z position: 16cm
-                Position description: Leaning against the wall (ID=2); Bottom right corner position X=21.5cm and Z=8cm, angle follows ; Reflective face visible
-            Color / texture: Reflective
+                X position: 18cm
+                Y position: 2cm
+                Z position: 24cm
+                Position description: Put down on the synthetic lawn (ID=3), led in front of the camera
+            Mode: Blink
+            Color / texture: White

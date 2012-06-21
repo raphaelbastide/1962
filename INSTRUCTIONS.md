@@ -117,6 +117,12 @@ The PIECE file template:
 
 This INSTRUCTIONS file can and must envolve. I should be modified in order to accompany the PIECE file. For example if a new kind of object needs the creation of a new kind of key (property), it needs to be archived below:
 
+#### Mode
+
+Electric or mechanical hardware can have one or multiple status, in this case a key "Mode" will be specified with values such as "On", "Off", "Blink"…
+
+    Mode: On
+
 #### Nutrients
 
 Plant or animals needs water or food to live, a key "Additional water" or "Additional food" can be created, with scalable values such as units "|". Exemple for four water additions:

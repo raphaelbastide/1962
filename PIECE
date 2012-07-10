@@ -13,7 +13,7 @@ Title: 1962
         Height: 49cm
     Mathematic basis: Orthonormal
     Position of the origin: At the top left of the white plank, see v0.1
-    Default objects origin: Object's closest point to the main origin
+    Default objects origin: Object's closest angle to the main origin
     Capture hardware
         Type: Photographic
         Model: Digital Camera
@@ -70,7 +70,7 @@ Title: 1962
                 Z position: 26cm
                 Position description: Put down on the synthetic lawn (ID=3), origin is the under-plate bottom center
             Description: Contains a tomato plant, loam , clay pot, clay under-plate; The objects carry out theirs traditional roles
-            Water addition: |||||||||
+            Water addition: ||||||||||||
             Color / texture: Brick, green, clay, plant
         ID: 5
             Name: Bicycle led
@@ -86,3 +86,14 @@ Title: 1962
                 Position description: Put down on the synthetic lawn (ID=3), led in front of the camera
             Mode: Blink
             Color / texture: White
+        ID: 6
+            Name: Shovel handle
+            Size
+                Diameter: 3.5cm
+                Height: 119cm
+            Position
+                X position: 24cm
+                Y position: 2cm
+                Z position: 17cm
+                Position description: Vertical, put down on the synthetic lawn (ID=3), leaning against the wall (ID=2), origin is the bottom center of the stick
+            Color / texture: Wood

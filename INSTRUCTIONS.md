@@ -128,3 +128,13 @@ Electric or mechanical hardware can have one or multiple status, in this case a 
 Plant or animals needs water or food to live, a key "Additional water" or "Additional food" can be created, with scalable values such as units "|". Exemple for four water additions:
 
     Additional water: ||||
+
+#### Circular objects
+
+It should have a "Diameter" instead of a "Width".
+
+#### Object origins
+
+Default object origins usually are object's closest angle to the main origin. It can be confusing for some objects, in this case, It is better to precise the object origin in the "Position description" key:
+
+    Position description: Vertical, origin is the bottom center of the stick

@@ -70,22 +70,8 @@ Title: 1962
                 Z position: 26cm
                 Position description: Put down on the synthetic lawn (ID=3), origin is the under-plate bottom center
             Description: Contains a tomato plant, loam , clay pot, clay under-plate; The objects carry out theirs traditional roles
-            Water addition: ||||||||||||
-            Color / texture: Brick, green, clay, plant
-        ID: 5
-            Name: Bicycle led
-            URL: http://www.hema.nl/winkel/altijd-lage-prijzen/2-pak-mini-led-lampjes-%2841155070%29
-            Size
-                Width: 3cm
-                Height: 4.5cm
-                Depth: 1.5cm
-            Position
-                X position: 18cm
-                Y position: 2cm
-                Z position: 24cm
-                Position description: Put down on the synthetic lawn (ID=3), led in front of the camera
-            Mode: Blink
-            Color / texture: White
+            Water addition: |||||||||||||
+            Color / texture: Brick, green, clay, vegetal
         ID: 6
             Name: Shovel handle
             Size

@@ -46,7 +46,7 @@ Folder (optional). It can be used as an addenda, an annexe or the archive of com
 ### Basics
 
 - Use the format "Key: value"
-- Parentchip relationship are symbolised using indentation (hit [tab](http://en.wikipedia.org/wiki/Tab_character) key at the begining of a line). Demonstration:
+- Parenthood relationship are symbolised using indentation (hit [tab](http://en.wikipedia.org/wiki/Tab_character) key at the begining of a line). Demonstration:
 
         Name: Floral foam brick
         Size

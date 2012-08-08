@@ -1,0 +1,29 @@
+/* @override http://www.creativeapplications.net/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 */
+
+/*
+Default style for WP-PageNavi plugin
+
+http://wordpress.org/extend/plugins/wp-pagenavi/
+*/
+
+.wp-pagenavi {
+	clear: both;
+}
+
+.wp-pagenavi a, .wp-pagenavi span {
+	text-decoration: none;
+	border: 1px solid #BFBFBF;
+	padding: 4px 4px;
+	margin: 2px;
+}
+
+.wp-pagenavi a:hover, .wp-pagenavi span.current {
+	border-color: #000;
+	background: black;
+	color: #fefffe;
+	text-decoration: none !important;
+}
+
+.wp-pagenavi span.current {
+	font-weight: bold;
+}

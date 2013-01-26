@@ -135,6 +135,33 @@ It should have a "Diameter" instead of a "Width".
 
 #### Object origins
 
-Default object origins usually are object's closest angle to the main origin. It can be confusing for some objects, in this case, It is better to precise the object origin in the "Position description" key:
+Default object origins are usually defined by object's closest angle to the main origin at the moment of its first represtentation on the sculpture. It can be confusing for some objects, in this case, it is better to precise the object origin in the "Position description" key:
 
     Position description: Vertical, origin is the bottom center of the stick
+
+#### Models
+
+An object can be considered as a copy of another model object. It will inherit by default of the keys and values of its model. Models will be quoted with, as a key: "Model" and as a value: the model object's ID. In the following example, the object (ID=6) will inherit the size and Y and Z positions of its model (ID=5).
+
+  ID: 5
+      Name: Credit card
+      Size
+          Width: 8,5cm
+          Height: 5,5cm
+          Depth: 0.1cm
+      Position
+          X position: 3cm
+          Y position: 3cm
+          Z position: 0cm
+  ID: 6
+      Model: ID=5
+      Possition
+          X position: 10cm
+    
+
+If an object is relative to a model from a previous sculpture version, the version number should be added before the model's ID separated by a slash:
+
+  ID: 6
+      Model: v0.7/ID=5
+      Possition
+          X position: 10cm

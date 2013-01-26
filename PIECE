@@ -1,6 +1,6 @@
 Title: 1962
     Project curator: Raphaël Bastide
-    Version: 0.7
+    Version: 0.8
     Repository URL: https://github.com/raphaelbastide/1962
     Physical location
         Latitude: 48.8512°
@@ -10,11 +10,11 @@ Title: 1962
         Country: France
     Sculpture surface
         Width: 60cm
-        Height: 49cm
-    Mathematic basis: Orthonormal
+        Depth: 49cm
+    Mathematic basis: Orthonormal, right handed orientation
     Position of the origin: At the top left of the white plank, see v0.1
     Default objects origin: Object's closest angle to the main origin
-    Capture hardware
+    Capture hardware 
         Type: Photographic
         Model: Digital Camera
         X position: 30cm
@@ -22,61 +22,29 @@ Title: 1962
         Z position: 160cm
         Direction: Facing the installation
     Lighting hardware
-        Natural
+        Default flash of the camera 
     Objects
         ID: 1
             Name: White plank
             Size
                 Width: 60cm
-                Height: 49cm
-                Depth: 0.4cm
-            Position
+                Height: 0.4cm
+                Depth: 49cm
+            Position  
                 X position: 0
                 Y position: 0
                 Z position: 0
                 Position description: The plank is put down on the floor on its bigger side
             Color / texture: White
         ID: 2
-            Name: Wall
+            Name: Cardboard box
             Size
-                Width: 60cm
-                Height: 130cm
+                Width: 15.5cm
+                Height: 4.3cm
+                Depth: 24.8cm
             Position
                 X position: 0
-                Y position: 0
-                Z position: 0
-                Position description: Belongs to the (Y0X) plane
-            Color / texture: White
-        ID: 3
-            Name: Shovel handle
-            Size
-                Diameter: 3.5cm
-                Height: 119cm
-            Position
-                X position: 30cm
                 Y position: 0.4cm
-                Z position: 28cm
-                Position description: Vertical, put down on the white plank (ID=1), leaning against the wall (ID=2), origin is the bottom center of the stick
-            Color / texture: Wood
-        ID: 4
-            Name: Poster of v0.3
-            Size
-                Width: 39cm
-                Height: 56.8cm
-            Position
-                X position: 12.5cm
-                Y position: 59cm
-                Z position: 0cm
-                Position description: Against the wall (ID=2), glued to and supported by the wood stick (ID=5), hanged by the shovel handle (ID=3)
-            Color / texture: Cheap grayscale inkjet print
-        ID: 5
-            Name: Wood stick
-            Size
-                Diameter: 0.7cm
-                Height: 39cm
-            Position
-                X position: 12.5cm
-                Y position: 115.8cm
-                Z position: 0cm
-                Position description: Glued to the top of the poster (ID=3), wedged by the shovel handle (ID=3)
-            Color / texture: Wood
+                Z position: 0
+                Position description: On the white plank (ID=1)
+            Color / texture: Red and gray cardboard

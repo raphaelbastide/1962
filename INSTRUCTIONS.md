@@ -157,11 +157,10 @@ An object can be considered as a copy of another model object. It will inherit b
       Model: ID=5
       Possition
           X position: 10cm
-    
 
 If an object is relative to a model from a previous sculpture version, the version number should be added before the model's ID separated by a slash:
 
   ID: 6
-      Model: v0.7/ID=5
+      Model: v0.7 / ID=5
       Possition
           X position: 10cm

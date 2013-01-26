@@ -1,6 +1,6 @@
 Title: 1962
     Project curator: Raphaël Bastide
-    Version: 0.8
+    Version: 0.8.1
     Repository URL: https://github.com/raphaelbastide/1962
     Physical location
         Latitude: 48.8512°
@@ -37,14 +37,69 @@ Title: 1962
                 Position description: The plank is put down on the floor on its bigger side
             Color / texture: White
         ID: 2
-            Name: Cardboard box
-            Size
-                Width: 15.5cm
-                Height: 4.3cm
-                Depth: 24.8cm
+            Model: v0.8 / ID=2
+        ID: 3
+            Model: v0.8 / ID=2
             Position
-                X position: 0
-                Y position: 0.4cm
-                Z position: 0
-                Position description: On the white plank (ID=1)
-            Color / texture: Red and gray cardboard
+                Y position: 9cm
+            Position description: set on the cardboard box below 
+        ID: 4
+            Model: v0.8 / ID=2
+            Position
+                Y position: 13.3cm
+            Position description: set on the cardboard box below 
+        ID: 5
+            Model: v0.8 / ID=2
+            Position
+                Y position: 17.6cm
+            Position description: set on the cardboard box below 
+        ID: 6
+            Model: v0.8 / ID=2
+            Position
+                Y position: 21.9cm
+            Position description: set on the cardboard box below 
+        ID: 7
+            Model: v0.8 / ID=2
+            Position
+                Y position: 26.2cm
+            Position description: set on the cardboard box below 
+        ID: 8
+            Model: v0.8 / ID=2
+            Position
+                Y position: 30.5cm
+            Position description: set on the cardboard box below 
+        ID: 9
+            Model: v0.8 / ID=2
+            Position
+                Y position: 34.8cm
+            Position description: set on the cardboard box below 
+        ID: 10
+            Model: v0.8 / ID=2
+            Position
+                Y position: 39.1cm
+            Position description: set on the cardboard box below 
+        ID: 11
+            Model: v0.8 / ID=2
+            Position
+                Y position: 43.4cm
+            Position description: set on the cardboard box below 
+        ID: 12
+            Model: v0.8 / ID=2
+            Position
+                Y position: 47.7cm
+            Position description: set on the cardboard box below 
+        ID: 13
+            Model: v0.8 / ID=2
+            Position
+                Y position: 52cm
+            Position description: set on the cardboard box below 
+        ID: 14
+            Model: v0.8 / ID=2
+            Position
+                Y position: 56.3cm
+            Position description: set on the cardboard box below 
+        ID: 15
+            Model: v0.8 / ID=2
+            Position
+                Y position: 60.6cm
+            Position description: set on the cardboard box below 

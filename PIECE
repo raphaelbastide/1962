@@ -14,7 +14,7 @@ Title: 1962
     Mathematic basis: Orthonormal, right handed orientation
     Position of the origin: At the top left of the white plank, see v0.1
     Default objects origin: Object's closest angle to the main origin
-    Capture hardware 
+    Capture hardware
         Type: Photographic
         Model: Digital Camera
         X position: 30cm
@@ -22,7 +22,7 @@ Title: 1962
         Z position: 160cm
         Direction: Facing the installation
     Lighting hardware
-        Default flash of the camera 
+        Default flash of the camera
     Objects
         ID: 1
             Name: White plank
@@ -30,7 +30,7 @@ Title: 1962
                 Width: 60cm
                 Height: 0.4cm
                 Depth: 49cm
-            Position  
+            Position
                 X position: 0
                 Y position: 0
                 Z position: 0

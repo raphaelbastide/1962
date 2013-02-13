@@ -37,7 +37,7 @@ A /media/HD (optional) subfolder can contain high-definition documents. This fol
 
 ### /extra
 
-Folder (optional). It can be used as an addenda, an annexe or the archive of complementary documents such as process pictures, drawings films…
+Folder (optional). It can be used as an addenda, an annex or the archive of complementary documents such as process pictures, drawings films…
 
 ## Syntax
 
@@ -46,7 +46,7 @@ Folder (optional). It can be used as an addenda, an annexe or the archive of com
 ### Basics
 
 - Use the format "Key: value"
-- Parenthood relationship are symbolised using indentation (hit [tab](http://en.wikipedia.org/wiki/Tab_character) key at the begining of a line). Demonstration:
+- Parenthood relationship are symbolised using indentation (hit [tab](http://en.wikipedia.org/wiki/Tab_character) key at the beginning of a line). Demonstration:
 
         Name: Floral foam brick
         Size
@@ -115,7 +115,7 @@ The PIECE file template:
                 
 ### Evolutions of this INSTRUCTIONS file
 
-This INSTRUCTIONS file can and must envolve. I should be modified in order to accompany the PIECE file. For example if a new kind of object needs the creation of a new kind of key (property), it needs to be archived below:
+This INSTRUCTIONS file can and must evolve. I should be modified in order to accompany the PIECE file. For example if a new kind of object needs the creation of a new kind of key (property), it needs to be archived below:
 
 #### Mode
 
@@ -135,13 +135,13 @@ It should have a "Diameter" instead of a "Width".
 
 #### Object origins
 
-Default object origins are usually defined by object's closest angle to the main origin at the moment of its first represtentation on the sculpture. It can be confusing for some objects, in this case, it is better to precise the object origin in the "Position description" key:
+Default object origins are usually defined by object's closest angle to the main origin at the moment of its first representation on the sculpture. It can be confusing for some objects, in this case, it is better to precise the object origin in the "Position description" key:
 
     Position description: Vertical, origin is the bottom center of the stick
 
 #### Models
 
-An object can be considered as a copy of another model object. It will inherit by default of the keys and values of its model. Models will be quoted with, as a key: "Model" and as a value: the model object's ID. In the following example, the object (ID=6) will inherit the size and Y and Z positions of its model (ID=5).
+An object can be considered as a copy of another model object. Consequently, it will inherit by default of the keys and values of its model. Models will be quoted with, as a key: "Model" and as a value: the model object's ID. In the following example, the object (ID=6) will inherit the size and Y and Z positions of its model (ID=5).
 
     ID: 5
         Name: Credit card

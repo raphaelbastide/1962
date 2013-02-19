@@ -17,7 +17,7 @@ Using a GitHub account, everybody can duplicate (fork) this project in order to:
 
 ### Representation
 
-Each representation must have its own public branch and archive. Each representation can differ from its parent. It must be documented with photographs or streamed video and must accept major modifications.
+Each representation must have its own public branch and archive. Each representation can differ from its parent. It must be documented with photographs, video or streamed video and must accept major modifications.
 
 To make your own sculpture:
 
@@ -38,17 +38,19 @@ You can also open an issue on the <a href="https://github.com/raphaelbastide/196
 
 As the content of the [documentation](https://github.com/raphaelbastide/1962/blob/master/PIECE) must be as precise as possible, the interpretations of each piece must be as close to this documentation as possible.
 A contribution can be discussed only if it follows the instructions ([INSTRUCTIONS.md](https://github.com/raphaelbastide/1962/blob/master/INSTRUCTIONS.md)).
-Each clone must accept to be shown in a form.
+Each fork and branche must accept to be shown in a form.
 
 ### Issues
 
-Suggestions, bug reports, issues and pull requests are discussed on the [GitHub  issue page](https://github.com/raphaelbastide/1962/issues).
+Suggestions, questions, bug reports, issues and pull requests are discussed on the [GitHub  issue page](https://github.com/raphaelbastide/1962/issues).
 
 ## About
 
 This project is under [MIT LICENSE](http://raphael.mit-license.org/).
 
 Initiated by Raphaël Bastide in february 2012.
+
+[List of the contributors](https://github.com/raphaelbastide/1962/blob/master/CONTRIBUTORS).
 
 After Robert Morris _Card File_, 1962.
 

@@ -42,64 +42,52 @@ Title: 1962
             Model: v0.8 / ID=2
             Position
                 Y position: 9cm
-                Position description: set on the cardboard box below 
+                Position description: set down on the cardboard box below 
         ID: 4
-            Model: v0.8 / ID=2
+            Model: ID=3
             Position
                 Y position: 13.3cm
-                Position description: set on the cardboard box below 
         ID: 5
-            Model: v0.8 / ID=2
+            Model: ID=3
             Position
                 Y position: 17.6cm
-                Position description: set on the cardboard box below 
         ID: 6
-            Model: v0.8 / ID=2
+            Model: ID=3
             Position
                 Y position: 21.9cm
-                Position description: set on the cardboard box below 
         ID: 7
-            Model: v0.8 / ID=2
+            Model: ID=3
             Position
                 Y position: 26.2cm
-                Position description: set on the cardboard box below 
         ID: 8
-            Model: v0.8 / ID=2
+            Model: ID=3
             Position
                 Y position: 30.5cm
-                Position description: set on the cardboard box below 
         ID: 9
-            Model: v0.8 / ID=2
+            Model: ID=3
             Position
                 Y position: 34.8cm
-                Position description: set on the cardboard box below 
         ID: 10
-            Model: v0.8 / ID=2
+            Model: ID=3
             Position
                 Y position: 39.1cm
-                Position description: set on the cardboard box below 
         ID: 11
-            Model: v0.8 / ID=2
+            Model: ID=3
             Position
                 Y position: 43.4cm
-                Position description: set on the cardboard box below 
         ID: 12
-            Model: v0.8 / ID=2
+            Model: ID=3
             Position
                 Y position: 47.7cm
-                Position description: set on the cardboard box below 
         ID: 13
-            Model: v0.8 / ID=2
+            Model: ID=3
             Position
                 Y position: 52cm
-                Position description: set on the cardboard box below 
         ID: 14
-            Model: v0.8 / ID=2
+            Model: ID=3
             Position
                 Y position: 56.3cm
-                Position description: set on the cardboard box below 
         ID: 15
-            Model: v0.8 / ID=2
+            Model: ID=3
             Position
                 Y position: 60.6cm
-                Position description: set on the cardboard box below 

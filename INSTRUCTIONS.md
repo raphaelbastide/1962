@@ -164,3 +164,27 @@ If an object is relative to a model from a previous sculpture version, the versi
         Model: v0.7 / ID=5
         Possition
             X position: 10cm
+            
+#### Incremental value
+
+It is possible to set values of a model's copies depending on another object's value. To do so, write the value with an operator (+, -, *) directly followed by number and a unit. The reference of this change will be the last declared copy.
+
+    ID: 1
+        Name: Candle
+        Size
+            Diameter: 3cm
+            Height: 8cm
+        Position
+            X position: 20cm
+            Y position: 10cm
+            Z position: 0cm
+    ID: 2
+      Model: ID=1
+        Position
+            X position: +5cm
+    ID: 3
+      Model: ID=1
+        Position
+            X position: +5cm
+
+In the example above, the X position of the candle ID=2 is 25cm, and the X position of the candle 3 is 30cm.

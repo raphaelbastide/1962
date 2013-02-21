@@ -14,7 +14,7 @@
       se situe là où je vis
           où elle a été inaugurée le 18 mai 2012 lors de <a href="https://github.com/raphaelbastide/1962/blob/master/media/extra/affiche-first-commit-mail.jpg">First Commit</a>, son vernissage
       est un hommage à Card File (1962) de Robert Morris
-          dont une archive de photographies personelles est disponible dans le répertoire <a href="https://github.com/raphaelbastide/1962/tree/master/media/extra">1962/media/extra/</a>
+          dont une archive de photographies personnelles est disponible dans le répertoire <a href="https://github.com/raphaelbastide/1962/tree/master/media/extra">1962/media/extra/</a>
       est forkable : on peut en créer des clones ou des branches indépendantes dans de nouveaux contextes
       est libre et open source
           sous licence <a href="http://raphael.mit-license.org/">MIT</a>

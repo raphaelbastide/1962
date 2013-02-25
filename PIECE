@@ -1,82 +1,167 @@
 Title: 1962
     Project curator: Raphaël Bastide
-    Version: 0.7
+    Version: 0.7.brussels-2013
     Repository URL: https://github.com/raphaelbastide/1962
     Physical location
-        Latitude: 48.8512°
-        Longitude: 2.3688°
+        Latitude: 50.829454
+        Longitude: 4.3389700000000175
         Altitude: 42m
-        City: Paris
-        Country: France
-    Sculpture surface
-        Width: 60cm
-        Height: 49cm
+        City: Brussels
+        Country: Belgium
+    Sculpture size
+        Width: 3.47m
+        Height: 3.27m
+        Depth: 4.36m
     Mathematic basis: Orthonormal
-    Position of the origin: At the top left of the white plank, see v0.1
+    Position of the origin: At the bottom right angle from street view
     Default objects origin: Object's closest angle to the main origin
     Capture hardware
         Type: Photographic
         Model: Digital Camera
-        X position: 30cm
-        Y position: 56cm
-        Z position: 160cm
+        X position: 1.73m
+        Y position: 8m
+        Z position: 1m
         Direction: Facing the installation
     Lighting hardware
-        Natural
+        Neons and natural
     Objects
         ID: 1
-            Name: White plank
+            Name: White Box
             Size
-                Width: 60cm
-                Height: 49cm
-                Depth: 0.4cm
-            Position
-                X position: 0
-                Y position: 0
-                Z position: 0
-                Position description: The plank is put down on the floor on its bigger side
-            Color / texture: White
+                Width: 3.47m
+                Height: 3.27m
+                Depth: 4.36m
+            Position: The object defines the origin
+            Color / texture: 1m*1m black grid on white
         ID: 2
-            Name: Wall
-            Size
-                Width: 60cm
-                Height: 130cm
-            Position
-                X position: 0
-                Y position: 0
-                Z position: 0
-                Position description: Belongs to the (Y0X) plane
-            Color / texture: White
-        ID: 3
             Name: Shovel handle
             Size
+                Height: 115cm
                 Diameter: 3.5cm
-                Height: 119cm
             Position
                 X position: 30cm
-                Y position: 0.4cm
+                Y position: 0
                 Z position: 28cm
-                Position description: Vertical, put down on the white plank (ID=1), leaning against the wall (ID=2), origin is the bottom center of the stick
-            Color / texture: Wood
+                Position description: Vertical, put down on the floor of the white box, leaning against the wall of the white box (ID=1) ; Origin is the bottom center of the stick.
+        ID: 3
+            Name: Sponge
+            Size
+                Width: 5.5cm
+                Height: 9cm
+                Depth: 2.2cm
+            Position
+                X position: 0
+                Y position: 1m
+                Z position: 1.21m
+                Position description:  Stuck to right wall of the white box (ID=1), belongs to the (Y0X) plane
+            Color / texture: Back is dark green, face is yellow
         ID: 4
-            Name: Poster of v0.3
-            Size
-                Width: 39cm
-                Height: 56.8cm
+            Model: ID=3
             Position
-                X position: 12.5cm
-                Y position: 59cm
-                Z position: 0cm
-                Position description: Against the wall (ID=2), glued to and supported by the wood stick (ID=5), hanged by the shovel handle (ID=3)
-            Color / texture: Cheap grayscale inkjet print
+                Y position: +9cm
+                Z position: +14.5cm
+            Color / texture: Dark green back, green face
         ID: 5
-            Name: Wood stick
-            Size
-                Diameter: 0.7cm
-                Height: 39cm
+            Model: ID=3
             Position
-                X position: 12.5cm
-                Y position: 115.8cm
-                Z position: 0cm
-                Position description: Glued to the top of the poster (ID=3), wedged by the shovel handle (ID=3)
-            Color / texture: Wood
+                Y position: +9cm
+                Z position: +14.5cm
+            Color / texture: Dark green back, red face
+        ID: 6
+            Model: ID=3
+            Position
+                Y position: +9cm
+                Z position: +14.5cm
+            Color / texture: Dark green back, yellow face
+        ID: 7
+            Model: ID=3
+            Position
+                Y position: +9cm
+                Z position: +14.5cm
+            Color / texture: Dark green back, green face
+        ID: 8
+            Model: ID=3
+            Position
+                Y position: +9cm
+                Z position: +14.5cm
+            Color / texture: Dark green back, red face
+        ID: 9
+            Name: Poster
+            Size
+                Width: 42cm
+                Height: 119cm
+            Position
+                X position: 0
+                Y position: 2.14m
+                Z position: 3.42m
+                Position description: Stuck to right wall of the white box (ID=1), belongs to the (Y0Z) plane
+            Color / texture: Content of PIECE file printed on white paper
+        ID: 10
+            Name: Fish bowl
+            Size
+                Diameter: 32cm
+                Height: 29cm
+            Position
+                X position: 3.85m
+                Y position: 0
+                Z position: 1.43m
+                Position description: On the floor, 3/4 filled with water
+            Fish food addition: ||
+            Color / texture: Transparent glass
+        ID: 11
+            Name: Goldfish
+            Size
+                Width: 7cm
+                Height: 3cm
+                Depth: 1cm
+            Position
+                Position description: Somewhere into the Fish bowl (ID=10)
+            Color / texture: Transparent glass
+        ID: 12
+            Model: ID=11
+        ID: 13
+            Name: Flooring Trowel
+            Size
+                Width: 13.5cm
+                Height: 28cm
+            Position
+                X position: 3.47m
+                Y position: 2.29m
+                Z position: 2.40m
+                Position description: Stuck to left wall of the white box (ID=1)
+            Color / texture: Metal and red wood
+        ID: 14
+            Model: ID=13
+            Position
+                Y position: +36cm
+                Z position: -0.7cm
+        ID: 15
+            Name: Jute webbing
+            Size
+                Width: 6cm
+                Height: 319cm
+                Depth: 0.2cm
+            Position
+                X1 position: 2.27m
+                Y1 position: 0
+                Z1 position: 0.68m
+                X2 position: 3.47m
+                Y2 position: 1.65m
+                Z2 position: 0.54m
+                X3 position: 2.8m
+                Y3 position: 1.65m
+                Z3 position: 0
+                Position description: Flexible object as segments, nailed following XYZ1, XYZ2, XYZ3
+            Color / texture: Brown background, 3 blue vertical strips
+        ID: 16
+            Name: Lead roll
+            Size
+                Width: 0.248m
+                Height: 3.20m
+                Depth: 0.03m
+            Position
+                X position: 1.87m
+                Y position: 0
+                Z position: -1.13m
+                Position description : Roll out on the floor, following (0Z) axis, roll is street side and contains 2.80m
+            Color / texture: Mat metal

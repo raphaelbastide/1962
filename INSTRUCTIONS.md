@@ -179,4 +179,4 @@ Some objects like thread, cord, rope, string and strap can be assimilated as lon
         X3 position: 2.8m
         Y3 position: 1.65m
         Z3 position: 0
-        Position description: Flexible object as segments, nailed following XYZ1, XYZ2, XYZ3
+        Position description: Flexible cordlike object, nailed following XYZ1, XYZ2, XYZ3

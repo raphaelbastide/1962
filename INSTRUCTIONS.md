@@ -41,12 +41,12 @@ Folder (optional). It can be used as an addenda, an annex or the archive of comp
 
 ## Syntax
 
-1962's files CONTRIBUTORS and PIECE follow a couple of simple syntaxic rules:
+1962's files CONTRIBUTORS and PIECE follow a couple of simple syntactic rules:
 
 ### Basics
 
 - Use the format "Key: value"
-- Parenthood relationship are symbolised using indentation (hit [tab](http://en.wikipedia.org/wiki/Tab_character) key at the beginning of a line). Demonstration:
+- Parenthood relationship are symbolized using indentation (hit [tab](http://en.wikipedia.org/wiki/Tab_character) key at the beginning of a line). Demonstration:
 
         Name: Floral foam brick
         Size
@@ -78,7 +78,7 @@ The PIECE file template:
             Altitude:
             City:
             Country: *
-        Sculpture surface // in centimeters (cm)
+        Sculpture size 
             Width: *
             Height: *
             Depth:
@@ -125,7 +125,7 @@ Electric or mechanical hardware can have one or multiple status, in this case a 
 
 #### Nutrients
 
-Plant or animals needs water or food to live, a key "Additional water" or "Additional food" can be created, with scalable values such as units "|". Exemple for four water additions:
+Plant or animals needs water or food to live, a key "Additional water" or "Additional food" can be created, with scalable values such as units "|". Example for four water additions:
 
     Additional water: ||||
 
@@ -164,3 +164,19 @@ If an object is relative to a model from a previous sculpture version, the versi
         Model: v0.7 / ID=5
         Possition
             X position: 10cm
+
+#### Cordlike objects
+
+Some objects like thread, cord, rope, string and strap can be assimilated as long and flexible. If tight, they can be described as links between located points just like segments in space:
+
+    Position
+        X1 position: 2.27m
+        Y1 position: 0
+        Z1 position: 0.68m
+        X2 position: 3.47m
+        Y2 position: 1.65m
+        Z2 position: 0.54m
+        X3 position: 2.8m
+        Y3 position: 1.65m
+        Z3 position: 0
+        Position description: Flexible object as segments, nailed following XYZ1, XYZ2, XYZ3

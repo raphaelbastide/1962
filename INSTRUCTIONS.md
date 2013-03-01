@@ -8,8 +8,8 @@ The project contains:
 - INSTRUCTIONS.md
 - CONTRIBUTORS
 - PIECE
-- media/
-- extra/
+- /media
+- /extra
 
 ### README.md
 
@@ -27,7 +27,7 @@ List of the contributors to the project. To write / edit this file, see *Syntax*
 
 Source code of the physical sculpture 1962. In this file are depicted and documented all the objects which constitute a sculpture version and all the informations about the sculpture version itself.
 
-### media/
+### /media
 
 Folder containing images of the current state of the piece and archives of past versions. This folder must be updated at least with photographs of the sculpture for each versions.
 
@@ -35,18 +35,18 @@ In /media, documents must be named using the tag of the last commit. For example
 
 A /media/HD (optional) subfolder can contain high-definition documents. This folder will be used to make media loading easier on a project web page. In this folder, documents must be named using the tag of the last commit + "HD". For example: 0_3HD.jpg.
 
-### extra/
+### /extra
 
 Folder (optional). It can be used as an addenda, an annex or the archive of complementary documents such as process pictures, drawings films…
 
 ## Syntax
 
-1962's files CONTRIBUTORS and PIECE follow a couple of simple syntaxic rules:
+1962's files CONTRIBUTORS and PIECE follow a couple of simple syntactic rules:
 
 ### Basics
 
 - Use the format "Key: value"
-- Parenthood relationship are symbolised using indentation (hit [tab](http://en.wikipedia.org/wiki/Tab_character) key at the beginning of a line). Demonstration:
+- Parenthood relationship are symbolized using indentation (hit [tab](http://en.wikipedia.org/wiki/Tab_character) key at the beginning of a line). Demonstration:
 
         Name: Floral foam brick
         Size
@@ -78,7 +78,7 @@ The PIECE file template:
             Altitude:
             City:
             Country: *
-        Sculpture surface // in centimeters (cm)
+        Sculpture size 
             Width: *
             Height: *
             Depth:
@@ -125,7 +125,7 @@ Electric or mechanical hardware can have one or multiple status, in this case a 
 
 #### Nutrients
 
-Plant or animals needs water or food to live, a key "Additional water" or "Additional food" can be created, with scalable values such as units "|". Exemple for four water additions:
+Plant or animals needs water or food to live, a key "Additional water" or "Additional food" can be created, with scalable values such as units "|". Example for four water additions:
 
     Additional water: ||||
 
@@ -164,27 +164,19 @@ If an object is relative to a model from a previous sculpture version, the versi
         Model: v0.7 / ID=5
         Possition
             X position: 10cm
-            
-#### Incremental value
 
-It is possible to set values of a model's copies depending on another object's value. To do so, write the value with an operator (+, -, *) directly followed by number and a unit. The reference of this change will be the last declared copy.
+#### Cordlike objects
 
-    ID: 1
-        Name: Candle
-        Size
-            Diameter: 3cm
-            Height: 8cm
-        Position
-            X position: 20cm
-            Y position: 10cm
-            Z position: 0cm
-    ID: 2
-      Model: ID=1
-        Position
-            X position: +5cm
-    ID: 3
-      Model: ID=1
-        Position
-            X position: +5cm
+Some objects like thread, cord, rope, string and strap can be assimilated as long and flexible. If tight, they can be described as links between located points just like segments in space:
 
-In the example above, the X position of the candle ID=2 is 25cm, and the X position of the candle 3 is 30cm.
+    Position
+        X1 position: 2.27m
+        Y1 position: 0
+        Z1 position: 0.68m
+        X2 position: 3.47m
+        Y2 position: 1.65m
+        Z2 position: 0.54m
+        X3 position: 2.8m
+        Y3 position: 1.65m
+        Z3 position: 0
+        Position description: Flexible cordlike object, nailed following XYZ1, XYZ2, XYZ3

@@ -2,7 +2,7 @@
 
 Sculptures conceptualized using a revision control system and represented physically.
 
-*^* **NEW** BRANCH EXHIBITION [BRANCH](raphaelbastide.com/branch/) in Brussels *^*
+**NEW**: exhibition [BRANCH](raphaelbastide.com/branch/) in Brussels.
 
 ## What
 

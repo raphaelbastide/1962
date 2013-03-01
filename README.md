@@ -2,6 +2,8 @@
 
 Sculptures conceptualized using a revision control system and represented physically.
 
+*^* **NEW** BRANCH EXHIBITION [BRANCH](raphaelbastide.com/branch/) in Brussels *^*
+
 ## What
 
 Any physical interpretation of the PIECE documentation hosted on [this GitHub repository](https://github.com/raphaelbastide/1962), or a versions of it will be part of the 1962 project.

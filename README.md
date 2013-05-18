@@ -2,13 +2,13 @@
 
 Sculptures conceptualized using a revision control system and represented physically.
 
-## What
+## Description
 
 Any physical interpretation of the PIECE documentation hosted on [this GitHub repository](https://github.com/raphaelbastide/1962), or a versions of it will be part of the 1962 project.
 
 For more details about the project architecture, see [INSTRUCTIONS.md](https://github.com/raphaelbastide/1962/blob/master/INSTRUCTIONS.md).
 
-## How
+## Protocols
 
 Using a GitHub account, everybody can duplicate (fork) this project in order to:
 
@@ -46,12 +46,8 @@ Suggestions, questions, bug reports, issues and pull requests are discussed on t
 
 ## About
 
-This project is under [MIT LICENSE](http://raphael.mit-license.org/).
-
-Initiated by Raphaël Bastide in february 2012.
-
-[List of the contributors](https://github.com/raphaelbastide/1962/blob/master/CONTRIBUTORS).
-
-After Robert Morris _Card File_, 1962.
-
+This project is under [MIT LICENSE](http://raphael.mit-license.org/).  
+Initiated by Raphaël Bastide in february 2012.  
+[List of the contributors](https://github.com/raphaelbastide/1962/blob/master/CONTRIBUTORS).  
+After Robert Morris _Card File_, 1962.  
 Contact: bonjour/at/raphaelbastide.com

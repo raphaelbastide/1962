@@ -1,6 +1,6 @@
 Title: 1962
     Project curator: Raphaël Bastide
-    Version: 0.8.1
+    Version: 0.9
     Repository URL: https://github.com/raphaelbastide/1962
     Physical location
         Latitude: 48.8512°
@@ -9,85 +9,170 @@ Title: 1962
         City: Paris
         Country: France
     Sculpture surface
-        Width: 60cm
-        Depth: 49cm
+        Width: 31cm
+        Height: 99cm
+        Depth: 31cm
     Mathematic basis: Orthonormal, right handed orientation
-    Position of the origin: At the top left of the white plank, see v0.1
+    Position of the origin: At the bottom of the angle formed by the two planks
     Default objects origin: Object's closest angle to the main origin
     Capture hardware
         Type: Photographic
         Model: Digital Camera
-        X position: 30cm
-        Y position: 56cm
-        Z position: 160cm
-        Direction: Facing the installation
+        X position: 110cm
+        Y position: 130cm
+        Z position: 60cm
+        Direction: Facing the angle formed by the two planks
     Lighting hardware
-        Default flash of the camera
+        Default natural and default flash of the camera
     Objects
         ID: 1
-            Name: White plank
+            Name: Plywood plank
             Size
-                Width: 60cm
-                Height: 0.4cm
-                Depth: 49cm
+                Width: 31cm
+                Height: 99cm
+                Depth: 1cm
             Position
                 X position: 0
                 Y position: 0
                 Z position: 0
-                Position description: The plank is put down on the floor on its bigger side
-            Color / texture: White
+                Position description: The plank is put down on the floor on its smaller slice along X axis
+            Color / texture: Wood
         ID: 2
-            Model: v0.8 / ID=2
+            Model: ID=2
+            Position
+                Y position: 1cm
+            Position description: The plank is put down on the floor on its smaller slice along Y axis, against (ID=1)
         ID: 3
-            Model: v0.8 / ID=2
+            Name: Heavy duty perfored shelf bracket
+            Size
+                Width: 35,9cm
+                Height: 2.7cm
+                Depth: 20cm
             Position
-                Y position: 9cm
-                Position description: set down on the cardboard box below 
+                X position: 1cm
+                Y position: 1cm
+                Z position: 0cm
+                Position description: Screwed to (ID=1) and (ID=1) to join them together
+            Color / texture: Steel
         ID: 4
-            Model: ID=3
+            Name: Screw eye
+            Size
+                Width: 1cm
+                Height: 2cm
+                Depth: 0,1cm
             Position
-                Y position: 13.3cm
+                Position description: Screwed into Plywood planks (ID=1), (ID=2) 
+            Color / texture: Steel
         ID: 5
-            Model: ID=3
+            Name: Lanyard clip
+            Size
+                Width: 1cm
+                Height: 2.9cm
+                Depth: 0,3cm
             Position
-                Y position: 17.6cm
+                Position description: Fastened to the eye of a Screw eye (ID=5)
         ID: 6
-            Model: ID=3
-            Position
-                Y position: 21.9cm
+            Group: ID=5, ID=6
         ID: 7
-            Model: ID=3
+            Model: ID=6
             Position
-                Y position: 26.2cm
+                X position: 3,5cm
+                Y position: 19cm
+                Z position: 0
         ID: 8
-            Model: ID=3
+            Model: ID=8
             Position
-                Y position: 30.5cm
+                X position: 7cm
+                Y position: 14,5cm
         ID: 9
-            Model: ID=3
+            Model: ID=8
             Position
-                Y position: 34.8cm
+                X position: 11cm
+                Y position: 11cm
         ID: 10
-            Model: ID=3
+            Model: ID=8
             Position
-                Y position: 39.1cm
+                X position: 14,5cm
+                Y position: 7cm
         ID: 11
-            Model: ID=3
+            Model: ID=8
             Position
-                Y position: 43.4cm
+                X position: 19cm
+                Y position: 3,5cm
         ID: 12
-            Model: ID=3
-            Position
-                Y position: 47.7cm
+            Group: ID=3, ID=7, ID=8, ID=9, ID=10, ID=11
         ID: 13
-            Model: ID=3
             Position
-                Y position: 52cm
+                Z position + 99cm
         ID: 14
-            Model: ID=3
+            Model: 6
             Position
-                Y position: 56.3cm
+                X position: 1cm
+                Y position: 20,5cm
+                Z position: 75cm
         ID: 15
-            Model: ID=3
+            Model: 6
             Position
-                Y position: 60.6cm
+                X position: 1cm
+                Y position: 11,5cm
+                Z position: 75cm
+        ID: 16
+            Model: 6
+            Position
+                X position: 11,5cm
+                Y position: 1cm
+                Z position: 75cm
+        ID: 17
+            Model: 6
+            Position
+                X position: 20,5cm
+                Y position: 1cm
+                Z position: 75cm
+        ID: 18
+            Model: 6
+            Position
+                X position: 1cm
+                Y position: 20,5cm
+                Z position: 50cm
+        ID: 19
+            Model: 6
+            Position
+                X position: 1cm
+                Y position: 11,5cm
+                Z position: 50cm
+        ID: 20
+            Model: 6
+            Position
+                X position: 11,5cm
+                Y position: 1cm
+                Z position: 50cm
+        ID: 21
+            Model: 6
+            Position
+                X position: 20,5cm
+                Y position: 1cm
+                Z position: 50cm
+        ID: 22
+            Model: 6
+            Position
+                X position: 1cm
+                Y position: 20,5cm
+                Z position: 25cm
+        ID: 23
+            Model: 6
+            Position
+                X position: 1cm
+                Y position: 11,5cm
+                Z position: 25cm
+        ID: 23
+            Model: 6
+            Position
+                X position: 11,5cm
+                Y position: 1cm
+                Z position: 25cm
+        ID: 23
+            Model: 6
+            Position
+                X position: 20,5cm
+                Y position: 1cm
+                Z position: 25cm

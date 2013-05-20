@@ -27,17 +27,17 @@ List of the contributors to the project. To write / edit this file, see *Syntax*
 
 Source code of the physical sculpture 1962. In this file are depicted and documented all the objects which constitute a sculpture version and all the informations about the sculpture version itself.
 
-### /media
+### media/
 
-Folder containing images of the current state of the piece and archives of past versions. This folder must be updated at least with photographs of the sculpture for each versions.
+Folder: Contains images of the current state of the piece and archives of past versions. This folder must be updated at least with photographs of the sculpture for each versions.
 
 In /media, documents must be named using the tag of the last commit. For example: 0.jpg will be a photograph of the version 0 of 1962 ; 2_5.ogg can be a video capture of the version 2.5 of 1962…
 
 A /media/HD (optional) subfolder can contain high-definition documents. This folder will be used to make media loading easier on a project web page. In this folder, documents must be named using the tag of the last commit + "HD". For example: 0_3HD.jpg.
 
-### /extra
+### extra/
 
-Folder (optional). It can be used as an addenda, an annex or the archive of complementary documents such as process pictures, drawings films…
+Folder (optional): It can be used as an addenda, an annex or the archive of complementary documents such as process pictures, drawings films…
 
 ## Syntax
 

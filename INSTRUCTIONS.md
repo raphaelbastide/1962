@@ -183,7 +183,7 @@ If an object is relative to a model from a previous sculpture version, the versi
         Possition
             X position: 10cm
 
-#### Incremental value
+#### Incremental values
 
 A value can be relative to another object's value. An operator (+, -, *) will be used before the value to change it, depending to the previous declared object copied from the same model. In the following example, the resulting X position of object (ID=2) will be set at 7cm:
 

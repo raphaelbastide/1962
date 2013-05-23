@@ -39,7 +39,7 @@ A /media/HD (optional) subfolder can contain high-definition documents. This fol
 
 Folder (optional): It can be used as an addenda, an annex or the archive of complementary documents such as process pictures, drawings films…
 
-## Syntax
+## Main syntax
 
 1962's files CONTRIBUTORS and PIECE follow a couple of simple syntactic rules:
 
@@ -48,17 +48,19 @@ Folder (optional): It can be used as an addenda, an annex or the archive of comp
 - Use the format "Key: value"
 - Parenthood relationship are symbolized using indentation (hit [tab](http://en.wikipedia.org/wiki/Tab_character) key at the beginning of a line). Demonstration:
 
+
         Name: Floral foam brick
         Size
             Width: 22,5cm
             Height: 10,6cm
             Depth: 8cm
 
+
 - A line can't stay empty
 - A line must begin with a capital letter
 - A line can contain a title or a couple "key: value"
 
-### Main informations
+### Main informations and example
 
 Details to understand the PIECE file:
 
@@ -113,7 +115,7 @@ The PIECE file template:
                 Name: 
                 ...
                 
-### Evolutions of this INSTRUCTIONS file
+## Evolutions of this INSTRUCTIONS file
 
 This INSTRUCTIONS file can and must evolve. I should be modified in order to accompany the PIECE file. For example if a new kind of object needs the creation of a new kind of key (property), it needs to be archived below:
 
@@ -133,6 +135,22 @@ Plant or animals needs water or food to live, a key "Additional water" or "Addit
 
 It should have a "Diameter" instead of a "Width".
 
+#### Cordlike objects
+
+Some objects like thread, cord, rope, string and strap can be assimilated as long and flexible. If tight, they can be described as links between located points just like segments in space:
+
+    Position
+        X1 position: 2.27m
+        Y1 position: 0
+        Z1 position: 0.68m
+        X2 position: 3.47m
+        Y2 position: 1.65m
+        Z2 position: 0.54m
+        X3 position: 2.8m
+        Y3 position: 1.65m
+        Z3 position: 0
+        Position description: Flexible cordlike object, nailed following XYZ1, XYZ2, XYZ3
+
 #### Object origins
 
 Default object origins are usually defined by object's closest angle to the main origin at the moment of its first representation on the sculpture. It can be confusing for some objects, in this case, it is better to precise the object origin in the "Position description" key:
@@ -141,7 +159,7 @@ Default object origins are usually defined by object's closest angle to the main
 
 #### Models
 
-An object can be considered as a copy of another model object. Consequently, it will inherit by default of the keys and values of its model. Models will be quoted with, as a key: "Model" and as a value: the model object's ID. In the following example, the object (ID=6) will inherit the size and Y and Z positions of its model (ID=5).
+An object can be considered as a copy of another model object or a [group of objects](#groups). Consequently, it will inherit by default of the keys and values of its model. Models will be quoted with, as a key: "Model" and as a value: the model object's ID. In the following example, the object (ID=6) will inherit the size and Y and Z positions of its model (ID=5).
 
     ID: 5
         Name: Credit card
@@ -165,18 +183,28 @@ If an object is relative to a model from a previous sculpture version, the versi
         Possition
             X position: 10cm
 
-#### Cordlike objects
+#### Incremental value
 
-Some objects like thread, cord, rope, string and strap can be assimilated as long and flexible. If tight, they can be described as links between located points just like segments in space:
+A value can be relative to another object's value. An operator (+, -, *) will be used before the value to change it, depending to the previous declared object copied from the same model. In the following example, the resulting X position of object (ID=2) will be set at 7cm:
 
-    Position
-        X1 position: 2.27m
-        Y1 position: 0
-        Z1 position: 0.68m
-        X2 position: 3.47m
-        Y2 position: 1.65m
-        Z2 position: 0.54m
-        X3 position: 2.8m
-        Y3 position: 1.65m
-        Z3 position: 0
-        Position description: Flexible cordlike object, nailed following XYZ1, XYZ2, XYZ3
+    ID: 4
+        Position
+            X position: 5px
+    ID: 5
+        Model: ID=4
+        Position
+            X position: +2px
+
+#### Groups
+
+A group of objects can be declared to be used as models. In the following example, the group (ID=1) will include object (ID=2) and object (ID=3).
+
+    ID: 1
+        Group: ID=2, ID=3
+
+Given that, the group (ID=1) can be duplicated and some of its implied properties can be changed and incremented :
+
+    ID: 4
+        Model: ID=1
+        Position
+            Z position +10cm

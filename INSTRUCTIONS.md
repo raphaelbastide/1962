@@ -73,6 +73,7 @@ The PIECE file template:
 
     Title: 1962
         Project curator: * // Name of the owner of the project
+        Version: * // The version number
         Repository URL: * // Ex.: https://github.com/raphaelbastide/1962
         Physical location
             Latitude: *
@@ -183,6 +184,19 @@ If an object is relative to a model from a previous sculpture version, the versi
         Possition
             X position: 10cm
 
+### Importation
+
+A whole version can be imported to another version, in this case, all the object of the imported version will be included with their respective characteristics (size, position…). In the following example, v0.3 will be imported into v0.8:
+
+    Title: 1962
+        Project curator: Raphaël Bastide
+        Version: 0.8
+        …
+        Import: v0.3
+        Objects
+            ID: 10
+            …
+
 ### Relative values
 
 A value can be relative to another object's value. The two objects must be copies of the same model. An operator (+, -, *) will be used before the relative value to change it, depending to the previous declared object. In the following example, the resulting X position of object (ID=2) will be set at 7cm:
@@ -211,7 +225,7 @@ Given that, the group (ID=1) can be duplicated and some of its implied pstringrt
 
 ### Révisables
 
-This part concerns the project “Révisable 1” and 1962 v0.9. A special format is used to describe the strokes strings can trace in a grid space.
+This section concerns the project “Révisable 1” and 1962 v0.9. A special format is used to describe the strokes strings can trace in a grid space.
 
 A grid is composed by points that can be connected by strings. Each point of a grid can hold extremities of strings, part of strings, or nothing.
 
@@ -256,7 +270,7 @@ The code above will produce the following composition:
 - C1: 1m Black elastic - [image](media/extra/doc-media/black-elastic.png)
 - C2: 3m Black elastic - [image](media/extra/doc-media/black-elastic.png)
 - C3: 5m Black elastic - [image](media/extra/doc-media/black-elastic.png)
-- C4: 2m Red velvet string barrier with chrome hooks - [image](media/extra/doc-media/velvet-string.png)
+- C4: 2m Red velvet string barrier with chrome hooks - [image](media/extra/doc-media/velvet-rope.png)
 
 #### Alternative writing
 

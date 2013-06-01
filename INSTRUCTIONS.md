@@ -237,12 +237,12 @@ A grid is composed by points that can be connected by strings. Each point of a g
 
 #### Code format
 
-    [C2][4:7:2:3:9:5:10][20/07/13]
-     a          b           c
+    C2/4:7:2:3:9:5:10/07-20-13
+     a         b         c
 
 a: Choice of the string.
 b: Declaration of the path of the rigging
-c: Date of the intervention based on the format: [dd/mm/yy]
+c: Date of the intervention based on the format: mm-dd-yy
 
 The code above will produce the following composition:
 
@@ -250,12 +250,12 @@ The code above will produce the following composition:
 
 #### Advanced compositions
 
-Several strings can be used in the same composition consequently, each path must be declared after a [string choice](#string-choice) `[C2][2:4:7]`.
+Several strings can be used in the same composition consequently, each path must be declared after a [string choice](#string-choice) `C2/2:4:7`.
 
 Strings can criss-cross from the front and the bottom. A crossing should be declared unsing parenthesis and the signs `<` and `>` will specify id the crissing occur respectively from front to behind or from behind to front.
 
-    [C2][1:8:10:(>1:8)11][C1][5:9][20/07/13]
-     a      b      c      d    e      f
+    C2/1:8:10:(>1:8)11/C1/5:9/07-20-13
+     a    b     c      d   e     f
 
 a: Choice of the first string
 b: First string path
@@ -279,7 +279,7 @@ The code above will produce the following composition:
 
 In order to facilitate the versionning, the code format can be writen with one statement per line.
 
-    [C2][1:8:10:(>1:8)11][C1][5:9][20/07/13]
+    C2/1:8:10:(>1:8)11/C1/5:9/07-20-13
 
 is equal to:
 
@@ -293,5 +293,5 @@ is equal to:
     C1
     5
     9
-    20/07/13
+    07/20/13
  

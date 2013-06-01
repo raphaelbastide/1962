@@ -1,5 +1,87 @@
 Title: 1962
     Project curator: Raphaël Bastide
-    Version: 0.9.3
-    Import: v0.9
-    [C3][1:6:2:15:8:21:17:22][28/05/2013]
+    Version: 0.8.1-chaumont-2013
+    Repository URL: https://github.com/raphaelbastide/1962
+    Physical location
+        Latitude: 48.113748
+        Longitude: 48.113748
+        Altitude: 310m
+        City: Chaumont
+        Country: France
+    Sculpture surface
+        Width: 60cm
+        Depth: 49cm
+    Mathematic basis: Orthonormal, right handed orientation
+    Position of the origin: At the top left of the floor
+    Default objects origin: Object's closest angle to the main origin
+    Capture hardware
+        Type: Photographic
+        Model: Digital Camera
+        X position: 30cm
+        Y position: 56cm
+        Z position: 160cm
+        Direction: Facing the installation
+    Lighting hardware
+        Unknown
+    Objects
+        ID: 1
+            Name: Floor
+            Size
+                Width: 60cm
+                Height: 0.4cm
+                Depth: 49cm
+            Position
+                X position: 0
+                Y position: 0
+                Z position: 0
+                Position description: Defines the origin
+            Color / texture: White
+        ID: 2
+            Name: Brick
+            Size
+                Width: 15.5cm
+                Height: 4.3cm
+                Depth: 24.8cm
+            Position
+                X position: 0
+                Y position: 0.4cm
+                Z position: 0
+                Position description: On the floor (ID=1)
+            Color / texture: Dark orange
+        ID: 3
+            Model: ID=2
+            Position
+                Y position: 9cm
+                Position description: put on the brick below 
+        ID: 4
+            Model: ID=2
+            Position
+                Y position: 13.3cm
+                Position description: put on the brick below 
+        ID: 5
+            Model: ID=2
+            Position
+                Y position: 17.6cm
+                Position description: put on the brick below 
+        ID: 6
+            Model: ID=2
+            Position
+                Y position: 21.9cm
+                Position description: put on the brick below 
+        ID: 7
+            Model: ID=2
+            Position
+                Y position: 26.2cm
+                Position description: put on the brick below 
+        ID: 8
+            Model: ID=2
+            Position
+                Y position: 30.5cm
+                Position description: put on the brick below 
+        ID: 9
+            Group: ID=2, ID=3, ID=4, ID=5, ID=6, ID=7, ID=8
+        ID: 10
+            Model: ID=9
+            Position
+                Y position: 34.8cm
+                Position description: put on the brick group below

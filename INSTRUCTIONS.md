@@ -60,7 +60,7 @@ Folder (optional): It can be used as an addenda, an annex or the archive of comp
 - A line must begin with a capital letter
 - A line can contain a title or a couple "key: value"
 
-### Main informations and example
+### Main information and example
 
 Details to understand the PIECE file:
 
